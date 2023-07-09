@@ -5,9 +5,9 @@ const WorkWithUs = () => {
   return (
     <div className="p-10 pb-10 lg:pb-20 flex gap-32 lg:flex-row  flex-wrap text-5xl lg:text-6xl pt-8 leading-14 lg:leading-16 tracking-[4px] lg:tracking-[6px]">
       <>
-        <div className="flex flex-col  items-end">
+        <div className="flex flex-col  items-center lg:items-end">
           <div className="w-[300px] lg:w-[450px] p-5 lg:pl-10 lg:p-2 text-center">
-            WANT TO WORK WITH US? LEAVE US A MESSAGE!
+            FOR ANY QUERIES LEAVE US A MESSAGE!
           </div>
           <div className="flex gap-8 w-60  pt-2 lg:pt-8">
             <a
@@ -44,7 +44,7 @@ const WorkWithUs = () => {
         </div>
       </>
       <>
-        <div className=" flex flex-col gap-4 items-center pl-0 lg:pl-16  justify-center ">
+        <div className=" flex flex-col gap-4 items-center lg:pl-16 justify-center ">
           <textarea
             type="text"
             placeholder="Type your message"
@@ -58,11 +58,16 @@ const WorkWithUs = () => {
             />
             <input
               type="text"
-              placeholder="Your email"
+              placeholder="Whatsapp No."
               className="font2 border-2 h-16 p-4 text-sm  w-[300px] lg:w-[260px]"
             />
           </div>
-          <button className="bg-black w-[300px] md:w-[300px] lg:w-[560px] h-16 tracking-[6px] text-white text-xl  hover:opacity-75 duration-200">
+          <input
+            type="text"
+            placeholder="Your Email"
+            className=" font2 border-2 p-4  text-sm h-16 lg:h-16 lg:w-[560px] md:w-[450px] w-[300px]"
+          />
+          <button className="bg-black w-[300px] md:w-[300px] lg:w-[560px] h-16 tracking-[6px] text-white text-xl hover:opacity-75 duration-200">
             Send
           </button>
         </div>
