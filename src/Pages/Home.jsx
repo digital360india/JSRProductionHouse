@@ -27,7 +27,7 @@ const Home = () => {
           <li className="lg:border-l-[2px] border-slate-100 h-[550%] absolute z-[-1] right-4 lg:right-20"></li>
           <Hero />
           <About />
-          {/* <UpcomingProjects /> */}
+          <UpcomingProjects />
           <ReleasedProjects />
           <FutureProjects />
           <Gallery />
