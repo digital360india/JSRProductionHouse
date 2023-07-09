@@ -134,7 +134,7 @@ const ReleasedProjects = () => {
         slidesPerView={1}
         spaceBetween={10}
         autoplay={{
-          delay: 2500,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         pagination={{
