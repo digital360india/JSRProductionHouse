@@ -10,6 +10,7 @@ const Team = () => {
               src="https://cdn.discordapp.com/attachments/1078905801017659432/1099956366891831397/Tarun.png"
               alt=""
               className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] object-contain"
+              data-aos="fade-up"
             />
             <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
               <h1
@@ -89,6 +90,7 @@ const Team = () => {
               src="https://cdn.discordapp.com/attachments/1078905801017659432/1099956366673723402/Prashil.png"
               alt=""
               className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] lg:ml-16 xl:ml-20 object-contain "
+              data-aos="fade-up"
             />
           </div>
 
@@ -97,6 +99,7 @@ const Team = () => {
               src="https://cdn.discordapp.com/attachments/1078905801017659432/1099956366426255370/Meedhya.png"
               alt=""
               className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] object-contain"
+              data-aos="fade-up"
             />
             <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-10 leading-0 w-[320px] md:w-[600px]">
               <h1

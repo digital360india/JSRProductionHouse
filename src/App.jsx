@@ -1,9 +1,10 @@
 import Home from "./Pages/Home";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Services from "./Pages/Services";
-import OurTeam from "./Pages/OurTeam";
+// import OurTeam from "./Pages/OurTeam";
 import Contact from "./Pages/Contact";
 import Rentals from "./Pages/Rentals";
+import Member from "./Pages/Member";
 // import { AnimatePresence } from "framer-motion/dist/framer-motion";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/ourteam" element={<OurTeam />} />
+        <Route path="/member" element={<Member />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/rentals" element={<Rentals />} />
       </Routes>

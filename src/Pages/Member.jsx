@@ -4,7 +4,7 @@ import Service from "../Components/Service";
 import FooterNav from "../Components/FooterNav";
 import Team from "../Components/Team";
 
-const OurTeam = () => {
+const Member = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -19,7 +19,7 @@ const OurTeam = () => {
           />
           <div className="flex justify-center items-center">
             <h1 className="text-7xl text-white tracking-wider absolute top-44 lg:top-52">
-              OUR TEAM
+              MEMBERS
             </h1>
           </div>
         </div>
@@ -44,4 +44,4 @@ const OurTeam = () => {
   );
 };
 
-export default OurTeam;
+export default Member;

@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 Aos.init({
   duration: 1200,
 });
+
 const Rental = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Rental = () => {
             src="https://cdn.discordapp.com/attachments/1078905801017659432/1099947451965775912/pre-prod.jpg"
             alt=""
             className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px]"
+            data-aos="fade-up"
           />
           <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
             <h1
@@ -91,6 +93,7 @@ const Rental = () => {
             src="https://cdn.discordapp.com/attachments/1078905801017659432/1099947451743469621/production.jpg"
             alt=""
             className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] lg:ml-16 xl:ml-20 "
+            data-aos="fade-up"
           />
         </div>
 
@@ -99,6 +102,7 @@ const Rental = () => {
             src="https://cdn.discordapp.com/attachments/1078905801017659432/1099947451965775912/pre-prod.jpg"
             alt=""
             className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px]"
+            data-aos="fade-up"
           />
           <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
             <h1
@@ -176,6 +180,7 @@ const Rental = () => {
             src="https://cdn.discordapp.com/attachments/1078905801017659432/1099947451743469621/production.jpg"
             alt=""
             className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] lg:ml-16 xl:ml-20 "
+            data-aos="fade-up"
           />
         </div>
       </div>

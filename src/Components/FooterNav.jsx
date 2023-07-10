@@ -27,9 +27,9 @@ const FooterNav = () => {
                   SERVICES
                 </li>
               </Link>
-              <Link to="/ourteam">
+              <Link to="/member">
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
-                  Our Team
+                  MEMBERS
                 </li>
               </Link>
 
