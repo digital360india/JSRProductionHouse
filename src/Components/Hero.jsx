@@ -26,12 +26,12 @@ const Hero = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper "
       >
         <SwiperSlide>
-          <div className="flex top-0 justify-center">
+          <div className="flex  justify-center w-full">
             <video
-              className="w-[500px] h-[200px]  lg:w-[1080px] lg:h-[600px] z-[-1] px-5"
+              className="w-[500px] h-[300px]  lg:w-full lg:h-[850px] "
               src="https://res.cloudinary.com/djb3n17c0/video/upload/v1682313672/tomp3.cc_-_JSR_PRODUCTION_HOUSE_Official_Trailer_SUBSCRIBE__480p_w4ocy0.mp4  "
               alt=""
               autoPlay
@@ -43,8 +43,8 @@ const Hero = () => {
         <SwiperSlide>
           <div className="flex top-0 justify-center">
             <video
-              className="w-[500px] h-[200px]  lg:w-[1080px] lg:h-[600px] z-[-1] px-5"
-              src="https://res.cloudinary.com/djb3n17c0/video/upload/v1682313672/tomp3.cc_-_JSR_PRODUCTION_HOUSE_Official_Trailer_SUBSCRIBE__480p_w4ocy0.mp4  "
+              className="w-[500px] h-[300px] lg:w-full lg:h-[850px]  "
+              src="https://res.cloudinary.com/djb3n17c0/video/upload/v1682313592/JSR_Production_House_Title_Film_fm2mjr.mp4 "
               alt=""
               autoPlay
               loop
@@ -55,8 +55,8 @@ const Hero = () => {
         <SwiperSlide>
           <div className="flex top-0 justify-center">
             <video
-              className="w-[500px] h-[200px]  lg:w-[1080px] lg:h-[600px] z-[-1] px-5"
-              src="https://res.cloudinary.com/djb3n17c0/video/upload/v1682313672/tomp3.cc_-_JSR_PRODUCTION_HOUSE_Official_Trailer_SUBSCRIBE__480p_w4ocy0.mp4  "
+              className="w-[500px] h-[300px]  lg:w-full lg:h-[850px]"
+              src="https://res.cloudinary.com/djb3n17c0/video/upload/v1682313436/WhatsApp_Video_2023-04-22_at_11.52.33_PM_um9zyh.mp4"
               alt=""
               autoPlay
               loop

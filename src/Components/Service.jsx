@@ -8,7 +8,7 @@ Aos.init({
 const Service = () => {
   return (
     <>
-      <div className="bg-black p-5 md:p-12 px-6 h-full w-[100%] text-white ">
+      <div className="bg-black  p-5 md:p-12 px-6 h-full w-[100%] text-white ">
         <div className="flex flex-col lg:flex-row pb-10 lg:pb-40">
           <img
             src="https://cdn.discordapp.com/attachments/1078905801017659432/1099947451965775912/pre-prod.jpg"
