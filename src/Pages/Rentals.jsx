@@ -17,7 +17,7 @@ const Rentals = () => {
             bar={"text-white"}
           />
           <div className="flex justify-center items-center">
-            <h1 className="text-7xl text-white tracking-wider absolute top-52">
+            <h1 className="text-7xl text-white tracking-wider absolute top-44 lg:top-52">
               RENTALS
             </h1>
           </div>
@@ -26,7 +26,7 @@ const Rentals = () => {
           src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg
 "
           alt=""
-          className="h-[500px] w-full object-cover"
+          className="h-[400px] lg:h-[500px] w-full object-cover"
         />
       </div>
       <div className="bg-black  ">

@@ -13,7 +13,7 @@ const Service = () => {
           <img
             src="https://cdn.discordapp.com/attachments/1078905801017659432/1099947451965775912/pre-prod.jpg"
             alt=""
-            className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px]"
+            className="w-[320px]  md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px]"
           />
           <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
             <h1
@@ -106,7 +106,7 @@ const Service = () => {
               className=" text-2xl lg:text-5xl pt-5 lg:pb-5"
               data-aos="fade-up"
             >
-              PRE-PRODUCTION
+              POST-PRODUCTION
             </h1>
             <p className="font2 opacity-40 pb-4">
               Pre-production is an essential part of the filmmaking process at
@@ -230,7 +230,7 @@ const Service = () => {
               className=" text-2xl lg:text-5xl  pt-5 lg:pb-5"
               data-aos="fade-up"
             >
-              PRODUCTION
+              POST-PRODUCTION
             </h1>
             <p className="font2 opacity-40 pb-4">
               During production, we provide comprehensive support, including

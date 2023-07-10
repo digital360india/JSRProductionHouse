@@ -3,7 +3,7 @@ import { BsTwitter } from "react-icons/bs";
 
 const WorkWithUs = () => {
   return (
-    <div className="p-10 pb-10 lg:pb-20 flex gap-32 lg:flex-row  flex-wrap text-5xl lg:text-6xl pt-8 leading-14 lg:leading-16 tracking-[4px] lg:tracking-[6px]">
+    <div className=" justify-center p-10 pb-10 lg:pb-20 flex gap-32 lg:flex-row  flex-wrap text-5xl lg:text-6xl pt-8 leading-14 lg:leading-16 tracking-[4px] lg:tracking-[6px]">
       <>
         <div className="flex flex-col  items-center lg:items-end">
           <div className="w-[300px] lg:w-[450px] p-5 lg:pl-10 lg:p-2 text-center">
