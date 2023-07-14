@@ -57,7 +57,7 @@ const WorkWithUs = () => {
               className="font2 border-2 p-4 text-sm h-16 w-[300px] lg:w-[260px]"
             />
             <input
-              type="text"
+              type="number"
               placeholder="Whatsapp No."
               className="font2 border-2 h-16 p-4 text-sm  w-[300px] lg:w-[260px]"
             />
