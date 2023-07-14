@@ -12,115 +12,28 @@ import { Pagination, Autoplay } from "swiper";
 
 import { useEffect, useState } from "react";
 import Card from "./Card";
+import SkeletonCard from "./SkeletonCard";
 
 const ReleasedProjects = () => {
   const [array, setArray] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  // const array = [
-
-  //   {
-  //     title: "KHAYALUN MA",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688557757/khayalun-ma_fjchpy.jpg",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Tarun Singh Rawat",
-  //     DOP: "Prashant Kamboj",
-  //     link: "https://youtu.be/w-GxPBP4piA",
-  //   },
-  //   {
-  //     title: "SCENE GALAT",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688552377/SECNE-GALAT_vaugh1.jpg ",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Prashant Kamboj",
-  //     DOP: "Suniel Kumar",
-  //     link: "https://youtu.be/gXz1Kuu9hq4",
-  //   },
-  //   {
-  //     title: "MERO DIL AAYGYI",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688558017/mero-dil-aaygyi_ybktn6.jpg ",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Tarun Singh Rawat",
-  //     DOP: "Prashant Kamboj ",
-  //     link: "https://youtu.be/XbeCM5eQmzM",
-  //   },
-  //   {
-  //     title: "RUKHSAT",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688558262/rukhsat_jbs9e4.jpg",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Harsh Kumar",
-  //     DOP: "Harish Negi",
-  //     link: "https://youtu.be/b9b8nulTBeM",
-  //   },
-  //   {
-  //     title: "72 HOURS",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688557574/72-hours_iy58yh.jpg",
-
-  //     producer: "JS Rawat",
-  //     director: "Avinash Dhyani",
-  //     DOP: "Harish Negi",
-  //     link: "https://youtu.be/ZmX47n8GuuM",
-  //   },
-  //   {
-  //     title: "TU NAH SAHI",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688631526/tu-na-sahi_h5lofh.jpg",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Mayank Kalra",
-  //     DOP: "Harish Negi",
-  //     link: "https://youtu.be/HTxoxOWRhRo",
-  //   },
-
-  //   {
-  //     title: "SPEED",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688631345/speed_tbbmfe.jpg",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Tarun Singh Rawat",
-  //     DOP: "Harish Negi",
-  //     link: "https://youtu.be/HtTxJN4-G3M",
-  //   },
-  //   {
-  //     title: "BARIRI PIYA",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688631013/bairi-piya_c0brqe.jpg",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Karan Arora",
-  //     DOP: "Harish Negi",
-  //     link: "https://youtu.be/VdtLg-a8iyg",
-  //   },
-  //   {
-  //     title: "KUYEDI",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688631151/kuyedi_e5wvkq.jpg",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Tarun Singh Rawat",
-  //     DOP: "Deepankar Ghildiyal ",
-  //     link: "https://youtu.be/EC1bYmTSkvk",
-  //   },
-
-  //   {
-  //     title: "BABY BAS KAR",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688630810/baby-bas-kar_rutogy.jpg",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Karan Arora",
-  //     DOP: "Harish Negi",
-  //     link: "https://youtu.be/SN1KfPk4-yQ",
-  //   },
-  // ];
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await fetch("https://jsr-backend.onrender.com/RProject");
       const data = await response.json();
       console.log(data, "=>>>");
+      setLoading(false);
       setArray(data);
     };
 
-    fetchProducts();
+    const timeOutId = setTimeout(async () => {
+      fetchProducts();
+    }, 2000);
+
+    return () => clearTimeout(timeOutId);
   }, []);
+
   return (
     <>
       <div>
@@ -161,13 +74,19 @@ const ReleasedProjects = () => {
         modules={[Pagination, Autoplay]}
         className="mySwiper p-2"
       >
-        {array.map((item, index) => {
-          return (
-            <SwiperSlide>
-              <Card key={index} data={item} />
-            </SwiperSlide>
-          );
-        })}
+        {loading
+          ? [1, 2, 3, 4].map((index) => (
+              <SwiperSlide key={index}>
+                <SkeletonCard />
+              </SwiperSlide>
+            ))
+          : array.map((item, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <Card data={item} />
+                </SwiperSlide>
+              );
+            })}
       </Swiper>
       {/* <>
         {array.map((item, index) => {

@@ -9,8 +9,11 @@ import "../future.css";
 
 // import required modules
 import { Pagination } from "swiper";
+import SkeletonCard from "./SkeletonCard";
 
 const FutureProjects = () => {
+  // const [loading, setLoading] = useState(true);
+
   return (
     <>
       <div>
