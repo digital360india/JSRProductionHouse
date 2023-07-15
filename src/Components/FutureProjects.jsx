@@ -10,10 +10,28 @@ import "../future.css";
 // import required modules
 import { Pagination } from "swiper";
 import SkeletonCard from "./SkeletonCard";
+import { useEffect, useState } from "react";
+import Card from "./Card";
 
 const FutureProjects = () => {
-  // const [loading, setLoading] = useState(true);
+  const [array, setArray] = useState([]);
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await fetch("https://jsr-backend.onrender.com/Future");
+      const data = await response.json();
+      console.log(data, "=>>>");
+      setLoading(false);
+      setArray(data);
+    };
+
+    const timeOutId = setTimeout(async () => {
+      fetchProducts();
+    }, 2000);
+
+    return () => clearTimeout(timeOutId);
+  }, []);
   return (
     <>
       <div>
@@ -48,11 +66,19 @@ const FutureProjects = () => {
         modules={[Pagination]}
         className="mySwiper p-2"
       >
-        {[1, 2, 3, 4].map((index) => (
-          <SwiperSlide key={index}>
-            <SkeletonCard />
-          </SwiperSlide>
-        ))}
+        {loading
+          ? [1, 2, 3, 4].map((index) => (
+              <SwiperSlide key={index}>
+                <SkeletonCard />
+              </SwiperSlide>
+            ))
+          : array.map((item, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <Card data={item} />
+                </SwiperSlide>
+              );
+            })}
       </Swiper>
     </>
   );

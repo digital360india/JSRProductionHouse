@@ -10,7 +10,6 @@ import WorkWithUs from "../Components/WorkWithUs";
 import Footer from "../Components/Footer";
 import About from "../Components/About";
 import Gallery from "../Components/Gallery";
-// import { motion } from "framer-motion/dist/framer-motion";
 
 const Home = () => {
   useEffect(() => {
@@ -19,7 +18,9 @@ const Home = () => {
 
   return (
     <>
-      <Navbar navColor={"text-black"} />
+      <div className="inset-1">
+        <Navbar navColor={"text-black"} />
+      </div>
       <Hero />
       <div>
         <ul className="flex flex-col items-center w-full  px-4 lg:px-20 py-0 lg:py-3">

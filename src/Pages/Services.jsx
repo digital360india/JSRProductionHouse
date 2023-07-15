@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <>
       <div className="">
-        <div className="bg-transparent absolute z-50 inset-1  ">
+        <div className="bg-transparent absolute z-50 inset-1">
           <Navbar
             navBgColor={"bg-white"}
             absolute={" absolute "}
