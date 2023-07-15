@@ -16,7 +16,7 @@ const FooterNav = () => {
             </Link>
           </div>
           <div>
-            <ul className="flex flex-col md:flex-row justify-center items-center lg:text-lg tracking-[2px]  lg:w-[700px] xl:w-[900px] lg:tracking-[3px] gap-2 md:gap-12 lg:gap-14 xl:gap-16 lg:pl-16  text-white">
+            <ul className="flex flex-col md:flex-row justify-center items-center lg:text-lg tracking-[2px]  lg:w-[700px] xl:w-[900px] lg:tracking-[3px] gap-3 md:gap-12 lg:gap-14 xl:gap-16 lg:pl-16  text-white">
               <Link to="/">
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
                   HOME
