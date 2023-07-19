@@ -19,7 +19,9 @@ const UpcomingProjects = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch("https://jsr-backend.onrender.com/Upcoming");
+      const response = await fetch(
+        "https://jsr-backend-x7rr.onrender.com/Upcoming"
+      );
       const data = await response.json();
       console.log(data, "=>>>");
       setLoading(false);

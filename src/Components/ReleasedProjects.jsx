@@ -20,7 +20,9 @@ const ReleasedProjects = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch("https://jsr-backend.onrender.com/RProject");
+      const response = await fetch(
+        "https://jsr-backend-x7rr.onrender.com/RProject"
+      );
       const data = await response.json();
       console.log(data, "=>>>");
       setLoading(false);
