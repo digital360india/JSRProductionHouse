@@ -14,7 +14,6 @@ const Card = (data) => {
           />
         </a>
         <div></div>
-
         <p className="font2 pt-2 pb-4  lg:pt-2 text-center self-center w-56 lg:w-60 xl:w-72">
           <li className="font-bold text-lg">{data?.data?.title}</li>
           <div className="flex items-start flex-col pt-2 text-base">

@@ -70,14 +70,14 @@ const ReleasedProjects = () => {
           },
           "@1.50": {
             slidesPerView: 4,
-            spaceBetween: 50,
+            spaceBetween: 10,
           },
         }}
         modules={[Pagination, Autoplay]}
-        className="mySwiper p-2"
+        className="mySwiper p-2 px-10 "
       >
         {loading
-          ? [1, 2, 3, 4].map((index) => (
+          ? [1, 2, 3, 4, 5].map((index) => (
               <SwiperSlide key={index}>
                 <SkeletonCard />
               </SwiperSlide>
