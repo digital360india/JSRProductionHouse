@@ -1,0 +1,51 @@
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.gallery__div_container {
+  background-color: black;
+  height: 600px;
+  width: 1540px;
+  background-image: url("https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/p3-title-image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 0 50px;
+  scroll-behavior: smooth;
+}
+.gallery__col {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.gallery__row1 {
+  margin: 20px;
+  width: 100%;
+}
+.gallery__col img {
+  width: 200px !important;
+  max-width: 200px !important;
+}
+
+@media (max-width: 768px) {
+  .gallery__div_container {
+    padding: 0 20px;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+  }
+  .gallery__col {
+    margin: 10px;
+  }
+  .gallery__col img {
+    width: 110px;
+  }
+}
