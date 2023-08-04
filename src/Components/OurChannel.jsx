@@ -12,14 +12,14 @@ const OurChannel = () => {
         national talent in movies, music videos, and TV shows.
       </p>
       <div className=" pt-10  flex  justify-around">
-        <div className="cursor-pointer flex gap-16 lg:gap-36 items-center ">
+        <div className="cursor-pointer flex gap-4 lg:gap-36 items-center ">
           <div className="hover:scale-125 duration-200">
             <a
               href="https://www.youtube.com/@jsrproductionhouse9127"
               target="_blank"
             >
               <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1688627048/JSR_PRODUCTION_HOUSE_LOGO_PNG_FINAL_kkanqx.png"
+                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691128687/PRODUCTION-HOUSE_warbtn.png"
                 alt="JSR Production House"
                 className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
               />
@@ -28,9 +28,21 @@ const OurChannel = () => {
           <div className="hover:scale-125 duration-200">
             <a href="https://www.youtube.com/@JSRRECORDLABEL" target="_blank">
               <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1688627102/jsr_record_label_low_res_predlq.png"
+                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691128688/RECORD-LABEL_gaq31x.png "
                 alt="JSR Record Label"
-                className="w-24 h-24 lg:w-44 lg:h-40 text-red-700"
+                className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
+              />
+            </a>
+          </div>
+          <div className="hover:scale-125 duration-200">
+            <a
+              href="https://www.youtube.com/@jsrrecordsregional"
+              target="_blank"
+            >
+              <img
+                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691128688/RECORDS-REGIONAL_h1dgav.png  "
+                alt="JSR Record Label"
+                className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
               />
             </a>
           </div>

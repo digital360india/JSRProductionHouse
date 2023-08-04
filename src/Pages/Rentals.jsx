@@ -23,8 +23,7 @@ const Rentals = () => {
           </div>
         </div>
         <img
-          src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg
-"
+          src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png"
           alt=""
           className="h-[400px] lg:h-[500px] w-full object-cover"
         />

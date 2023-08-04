@@ -57,7 +57,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
 
             <Link to="/member">
               <li className="hover:scale-125 hover:opacity-50 duration-200">
-                MEMBERS
+                TEAM
               </li>
             </Link>
             <Link to="/rentals">
@@ -103,7 +103,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
               </Link>
               <Link to="/member">
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
-                  MEMBERS
+                  TEAM
                 </li>
               </Link>
 

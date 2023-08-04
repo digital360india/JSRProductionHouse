@@ -10,6 +10,7 @@ import WorkWithUs from "../Components/WorkWithUs";
 import Footer from "../Components/Footer";
 import About from "../Components/About";
 import Gallery from "../Components/Gallery/Gallery";
+// import Xyz from "../Components/Xyz";
 
 const Home = () => {
   useEffect(() => {
@@ -37,6 +38,7 @@ const Home = () => {
         </ul>
         {/* <OurWork /> */}
       </div>
+      {/* <Xyz /> */}
       <Footer />
     </>
   );

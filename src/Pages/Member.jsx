@@ -19,13 +19,13 @@ const Member = () => {
           />
           <div className="flex justify-center items-center">
             <h1 className="text-7xl text-white tracking-wider absolute top-44 lg:top-52">
-              MEMBERS
+              TEAM
             </h1>
           </div>
         </div>
         <img
-          src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg
-"
+          src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130582/TEAM_l5vyw0.png"
+          // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
           alt=""
           className="h-[400px] lg:h-[500px] w-full object-cover"
         />
