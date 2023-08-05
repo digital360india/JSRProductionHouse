@@ -34,7 +34,7 @@ const Gallery = (props) => {
               </div>
               <div className="gallery__row2">
                 <PhotoView key={2} src={gallery?.img2}>
-                  <img className="" src={gallery?.img2} alt=""></img>
+                  <img src={gallery?.img2} alt=""></img>
                 </PhotoView>
               </div>
             </div>
@@ -46,7 +46,7 @@ const Gallery = (props) => {
               </div>
               <div className="gallery__row2">
                 <PhotoView key={4} src={gallery?.img4}>
-                  <img className="" src={gallery?.img4} alt=""></img>
+                  <img src={gallery?.img4} alt=""></img>
                 </PhotoView>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Gallery = (props) => {
               </div>
               <div className="gallery__row2">
                 <PhotoView key={6} src={gallery?.img6}>
-                  <img className="" src={gallery?.img6} alt=""></img>
+                  <img src={gallery?.img6} alt=""></img>
                 </PhotoView>
               </div>
             </div>
@@ -70,7 +70,7 @@ const Gallery = (props) => {
               </div>
               <div className="gallery__row2">
                 <PhotoView key={8} src={gallery?.img8}>
-                  <img className="" src={gallery?.img8} alt=""></img>
+                  <img src={gallery?.img8} alt=""></img>
                 </PhotoView>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Gallery = (props) => {
               </div>
               <div className="gallery__row2">
                 <PhotoView key={10} src={gallery?.img10}>
-                  <img className="" src={gallery?.img10} alt=""></img>
+                  <img src={gallery?.img10} alt=""></img>
                 </PhotoView>
               </div>
             </div>
@@ -94,7 +94,7 @@ const Gallery = (props) => {
               </div>
               <div className="gallery__row2">
                 <PhotoView key={12} src={gallery?.img12}>
-                  <img className="" src={gallery?.img12} alt=""></img>
+                  <img src={gallery?.img12} alt=""></img>
                 </PhotoView>
               </div>
             </div>
@@ -106,7 +106,7 @@ const Gallery = (props) => {
               </div>
               <div className="gallery__row2">
                 <PhotoView key={14} src={gallery?.img14}>
-                  <img className="" src={gallery?.img14} alt=""></img>
+                  <img src={gallery?.img14} alt=""></img>
                 </PhotoView>
               </div>
             </div>

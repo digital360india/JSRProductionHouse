@@ -1,7 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BsTwitter } from "react-icons/bs";
+import axios from "axios";
+import { Warning } from "postcss";
 
 const WorkWithUs = () => {
+  const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
+  const [email, setEmail] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [warning, setWarning] = useState(false);
+
+  const postMessage = async () => {
+    try {
+      const apiURL = "https://jsr-backend-x7rr.onrender.com/Query/";
+
+      const postData = {
+        message,
+        name,
+        whatsapp,
+        email,
+      };
+
+      axios
+        .post(apiURL, postData)
+        .then((response) => {
+          // console.log(response);
+          if (response.status == 200) setSuccess(!success);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } catch (error) {
+      console.error("Error sending message:", error);
+      // Handle any network or other errors that might occur during the POST request.
+    }
+  };
+
+  const handleSubmit = () => {
+    if (message == "" || name == "" || whatsapp == "" || email == "") {
+      setWarning(!warning);
+    } else postMessage();
+  };
+
   return (
     <div className=" justify-center p-10 pb-10 lg:pb-20 flex gap-32 lg:flex-row  flex-wrap text-5xl lg:text-6xl pt-8 leading-14 lg:leading-16 tracking-[4px] lg:tracking-[6px]">
       <>
@@ -46,31 +87,37 @@ const WorkWithUs = () => {
       <>
         <div className=" flex flex-col gap-4 items-center lg:pl-16 justify-center ">
           <textarea
+            onChange={(e) => setMessage(e.target.value)}
             type="text"
             placeholder="Type your message"
             className=" font2 border-2 p-4  text-sm h-32 lg:h-64 lg:w-[560px] md:[450px] w-[300px]"
           />
           <div className="flex flex-col lg:flex-row gap-2 lg:gap-10 ">
             <input
+              onChange={(e) => setName(e.target.value)}
               type="text"
               placeholder="Your name"
               className="font2 border-2 p-4 text-sm h-16 w-[300px] lg:w-[260px]"
             />
             <input
-              type="number"
-              placeholder="Whatsapp No."
-              className="font2 border-2 h-16 p-4 text-sm  w-[300px] lg:w-[260px]"
+              onChange={(e) => setWhatsapp(e.target.value)}
+              type="text"
+              placeholder="Your whatsapp no"
+              className="font2 border-2 p-4 text-sm h-16 w-[300px] lg:w-[260px]"
             />
           </div>
           <input
+            onChange={(e) => setEmail(e.target.value)}
             type="text"
             placeholder="Your Email"
             className=" font2 border-2 p-4  text-sm h-16 lg:h-16 lg:w-[560px] md:w-[450px] w-[300px]"
           />
-          {/* <button className="bg-black w-[300px] md:w-[300px] lg:w-[560px] h-16 tracking-[6px] text-white text-xl hover:opacity-75 duration-200">
-            Send
-          </button> */}
-          <a href="#_" class="relative inline-block text-lg group">
+
+          <a
+            onClick={handleSubmit}
+            href="#_"
+            class="relative inline-block text-lg group"
+          >
             <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium w-[300px] lg:w-[560px] leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900  group-hover:text-white">
               <span class="absolute inset-0  w-full h-full px-5 py-3  bg-gray-50"></span>
               <span class="absolute left-0 w-[600px] h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-black group-hover:-rotate-180 ease"></span>
@@ -81,6 +128,17 @@ const WorkWithUs = () => {
               data-rounded="rounded-lg"
             ></span>
           </a>
+
+          {warning && (
+            <div className="text-red-700 text-sm font2 tracking-normal ">
+              *All Fields Are Mandatory
+            </div>
+          )}
+          {success && (
+            <div className="text-green-700 text-sm font2 tracking-normal">
+              *Form Submitted Successfully
+            </div>
+          )}
         </div>
       </>
     </div>

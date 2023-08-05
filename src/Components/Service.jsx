@@ -152,29 +152,31 @@ const Service = () => {
               VIRTUAL PRODUCTION
             </h1>
             <p className="font2 opacity-40 pb-4">
-              During production, we provide comprehensive support, including
-              camera operation, lighting, sound recording, and on-set
-              coordination.
+              Our Virtual Production services harness the latest technology and
+              innovation to create immersive and captivating experiences for
+              your projects. With a seamless blend of the physical and virtual
+              realms, we bring your visions to life like never before.
             </p>
             <ul className="font2 flex flex-col gap-2">
-              <li>Filming</li>
+              <li>Virtual Sets and Environments</li>
               <li className="opacity-40">
-                We specialize in producing and directing award-winning films.
-                Our outstanding team will work and bring your story to life in
-                the most beautiful way!
+                Our skilled team of artists and technicians design and create
+                virtual sets and environments that perfectly complement your
+                storyline. Whether it's historical locations, futuristic
+                landscapes, or fantasy worlds, we can visualize
+                and build it all.
               </li>
-              <li>Commercial Advertisement</li>
+              <li>Virtual Cameras and Cinematography</li>
               <li className="opacity-40">
-                With us, you will receive the most effective and visually
-                appealing advertisements that represent your brand and its goals
-                to the maximum extent—ads that are powerful and unforgettable!
+                Our team of experienced cinematographers utilizes virtual
+                cameras to capture dynamic shots within the virtual environment,
+                enhancing the visual storytelling of your project.
               </li>
-              <li>Music Album</li>
+              <li>Game Engine Technology</li>
               <li className="opacity-40">
-                If you are looking for a highly professional yet affordable
-                voice recording studio, look no further. We’re here to help you
-                with everything from the production of music to creating the
-                best music videos for your songs.
+                We utilize powerful game engine technology to create dynamic and
+                immersive virtual worlds, resulting in higher fidelity and more
+                engaging experiences.
               </li>
             </ul>
           </div>
@@ -202,30 +204,32 @@ const Service = () => {
               MARKETING AND DISTRIBUTION
             </h1>
             <p className="font2 opacity-40 pb-4">
-              Pre-production is an essential part of the filmmaking process at
-              our production house. It is during this phase that we meticulously
-              plan, coordinate, and prepare for every aspect of the project to
-              ensure its success.
+              We are delighted to present our Marketing and Distribution
+              services that are designed to help your projects reach the widest
+              audience and achieve success.
             </p>
             <ul className="font2 flex flex-col gap-2">
-              <li>Story and Scriptwriting</li>
+              <li>Market Research and Strategy</li>
               <li className="opacity-40">
-                Have a story concept but are unsure about how to present it on
-                screen? Don’t worry, we have your back. With our storytelling,
-                your story will make people all the emotions you wanna portray
-                and jump out of their seats with excitement.
+                Our first step is to conduct in-depth market research to
+                understand your project's potential audience and the competitive
+                landscape. Based on the findings, we develop a tailored
+                marketing strategy to maximize your project's
+                visibility and impact.
               </li>
-              <li>Screenplay</li>
+              <li>Public Relations (PR)</li>
               <li className="opacity-40">
-                Professional screenwriters will work with you every step of the
-                way, from dialogue, scenes, and sequences to execution strategy,
-                until your vision becomes a reality!
+                Our PR experts work diligently to build positive media coverage
+                for your productions. We engage with journalists, bloggers, and
+                influencers to ensure your projects get the
+                attention they deserve.
               </li>
-              <li>Storyboarding</li>
+              <li>Distribution Strategies</li>
               <li className="opacity-40">
-                Get a close look at your work through a storyboard made for your
-                script, which includes a shot-by-shot sequence, placements, and
-                direction elements: a visual representation of your story plan.
+                We develop customized distribution plans to ensure your
+                productions are accessible to the right distribution channels,
+                whether it's theatrical releases, streaming platforms,
+                DVD/Blu-ray, or international markets.
               </li>
             </ul>
           </div>
