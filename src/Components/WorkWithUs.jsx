@@ -26,7 +26,7 @@ const WorkWithUs = () => {
         .post(apiURL, postData)
         .then((response) => {
           // console.log(response);
-          if (response.status == 200) setSuccess(!success);
+          if (response.status == 200) setSuccess(true);
         })
         .catch((error) => {
           console.log(error);
@@ -39,9 +39,15 @@ const WorkWithUs = () => {
 
   const handleSubmit = () => {
     if (message == "" || name == "" || whatsapp == "" || email == "") {
-      setWarning(!warning);
-    } else postMessage();
+      setWarning(true);
+    } else {postMessage();
+      setWarning(false);
+    }
   };
+  useEffect(() => {
+    setSuccess(false);
+    setWarning(false);
+  }, []);
 
   return (
     <div className=" justify-center p-10 pb-10 lg:pb-20 flex gap-32 lg:flex-row  flex-wrap text-5xl lg:text-6xl pt-8 leading-14 lg:leading-16 tracking-[4px] lg:tracking-[6px]">
@@ -102,7 +108,7 @@ const WorkWithUs = () => {
             <input
               onChange={(e) => setWhatsapp(e.target.value)}
               type="text"
-              placeholder="Your whatsapp no"
+              placeholder="Your whatsapp number"
               className="font2 border-2 p-4 text-sm h-16 w-[300px] lg:w-[260px]"
             />
           </div>
