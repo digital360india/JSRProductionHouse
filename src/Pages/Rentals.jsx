@@ -28,7 +28,12 @@ const Rentals = () => {
         .post(apiURL, postData)
         .then((response) => {
           // console.log(response);
-          if (response.status == 200) setSuccess(true);
+          if (response.status == 200){
+            setSuccess(true);
+            setTimeout(()=> {
+              setSuccess(false);
+            })
+          }
         })
         .catch((error) => {
           console.log(error);
