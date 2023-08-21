@@ -36,84 +36,84 @@ const Gallery = (props) => {
             <div className="gallery__col">
               <div className="gallery__row1">
                 <PhotoView src={gallery?.img1}>
-                  <img src={gallery?.img1} alt=""></img>
+                  <img src={gallery?.img1} alt="img1"></img>
                 </PhotoView>
               </div>
               <div className="gallery__row2">
                 <PhotoView src={gallery?.img2}>
-                  <img src={gallery?.img2} alt=""></img>
+                  <img src={gallery?.img2} alt="img2"></img>
                 </PhotoView>
               </div>
             </div>
             <div className="gallery__col">
               <div className="gallery__row1">
                 <PhotoView src={gallery?.img3}>
-                  <img src={gallery?.img3} alt=""></img>
+                  <img src={gallery?.img3} alt="img3"></img>
                 </PhotoView>
               </div>
               <div className="gallery__row2">
                 <PhotoView src={gallery?.img4}>
-                  <img src={gallery?.img4} alt=""></img>
+                  <img src={gallery?.img4} alt="img4"></img>
                 </PhotoView>
               </div>
             </div>
             <div className="gallery__col">
               <div className="gallery__row1">
                 <PhotoView src={gallery?.img5}>
-                  <img src={gallery?.img5} alt=""></img>
+                  <img src={gallery?.img5} alt="img5"></img>
                 </PhotoView>
               </div>
               <div className="gallery__row2">
                 <PhotoView src={gallery?.img6}>
-                  <img src={gallery?.img6} alt=""></img>
+                  <img src={gallery?.img6} alt="img6"></img>
                 </PhotoView>
               </div>
             </div>
             <div className="gallery__col">
               <div className="gallery__row1">
                 <PhotoView src={gallery?.img7}>
-                  <img src={gallery?.img7} alt=""></img>
+                  <img src={gallery?.img7} alt="img7"></img>
                 </PhotoView>
               </div>
               <div className="gallery__row2">
                 <PhotoView src={gallery?.img8}>
-                  <img src={gallery?.img8} alt=""></img>
+                  <img src={gallery?.img8} alt="img8"></img>
                 </PhotoView>
               </div>
             </div>
             <div className="gallery__col">
               <div className="gallery__row1">
                 <PhotoView src={gallery?.img9}>
-                  <img src={gallery?.img9} alt=""></img>
+                  <img src={gallery?.img9} alt="img9"></img>
                 </PhotoView>
               </div>
               <div className="gallery__row2">
                 <PhotoView src={gallery?.img10}>
-                  <img src={gallery?.img10} alt=""></img>
+                  <img src={gallery?.img10} alt="img10"></img>
                 </PhotoView>
               </div>
             </div>
             <div className="gallery__col">
               <div className="gallery__row1">
                 <PhotoView src={gallery?.img11}>
-                  <img src={gallery?.img11} alt=""></img>
+                  <img src={gallery?.img11} alt="img11"></img>
                 </PhotoView>
               </div>
               <div className="gallery__row2">
                 <PhotoView src={gallery?.img12}>
-                  <img src={gallery?.img12} alt=""></img>
+                  <img src={gallery?.img12} alt="img12"></img>
                 </PhotoView>
               </div>
             </div>
             <div className="gallery__col">
-              <div className="zgallery__row1">
+              <div className="gallery__row1">
                 <PhotoView src={gallery?.img13}>
-                  <img src={gallery?.img13} alt=""></img>
+                  <img src={gallery?.img13} alt="img13"></img>
                 </PhotoView>
               </div>
               <div className="gallery__row2">
                 <PhotoView src={gallery?.img14}>
-                  0 <img src={gallery?.img14} alt=""></img>
+                  <img src={gallery?.img14} alt="img14"></img>
                 </PhotoView>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
-import Service from "../Components/Service";
+// import Service from "../Components/Service";
 import FooterNav from "../Components/FooterNav";
 import Team from "../Components/Team";
 
