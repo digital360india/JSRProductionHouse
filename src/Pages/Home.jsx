@@ -10,8 +10,6 @@ import WorkWithUs from "../Components/WorkWithUs";
 import Footer from "../Components/Footer";
 import About from "../Components/About";
 import Gallery from "../Components/Gallery/Gallery";
-// import Gallery2 from "../Components/Gallery/Gallery2";
-// import Xyz from "../Components/Xyz";
 
 const Home = () => {
   useEffect(() => {
@@ -37,9 +35,7 @@ const Home = () => {
           <OurChannel />
           <WorkWithUs />
         </ul>
-        {/* <OurWork /> */}
       </div>
-      {/* <Xyz /> */}
       <Footer />
     </>
   );

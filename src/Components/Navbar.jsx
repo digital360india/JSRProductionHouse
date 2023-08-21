@@ -123,7 +123,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
           </div>
         </div>
       </div>
-      {/* <Slideover isOpen={open} onClose={handleOnClose}>
+      {/*<Slideover isOpen={open} onClose={handleOnClose}>
         <div className="flex flex-col">
           <Button onClick={handleOnClose}>ok</Button>
         </div>
@@ -149,7 +149,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                 <img
                   src="https://cdn.discordapp.com/attachments/1078905801017659432/1099960093216354415/JSR_logo.png"
                   alt=""
-                  className="w-16 "
+                  className="w-16"
                 />
                 <h1 className="text-white tracking-widest text-lg flex flex-col gap-10">
                   JSR PRODUCTION HOUSE

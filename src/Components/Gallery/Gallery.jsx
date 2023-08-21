@@ -15,7 +15,7 @@ const Gallery = (props) => {
       const data = await response.json();
       console.log(data, " gallery =>>>");
       setGallery(data);
-      setLoading(false); 
+      setLoading(false);
     };
 
     fetchProducts();
@@ -106,14 +106,14 @@ const Gallery = (props) => {
               </div>
             </div>
             <div className="gallery__col">
-              <div className="gallery__row1">
+              <div className="zgallery__row1">
                 <PhotoView src={gallery?.img13}>
                   <img src={gallery?.img13} alt=""></img>
                 </PhotoView>
               </div>
               <div className="gallery__row2">
                 <PhotoView src={gallery?.img14}>
-                  <img src={gallery?.img14} alt=""></img>
+                  0 <img src={gallery?.img14} alt=""></img>
                 </PhotoView>
               </div>
             </div>

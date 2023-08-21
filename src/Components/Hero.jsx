@@ -12,7 +12,6 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Hero = () => {
   return (
-    // <div className="w-[100%]">
     <>
       <Swiper
         spaceBetween={30}
@@ -41,30 +40,6 @@ const Hero = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-
-      {/* <div className="flex relative top-0 justify-center w-[100%]">
-        <video
-          className="w-[350px] h-[200px]  lg:w-[1200px] lg:h-[600px] z-[-1] px-5"
-          src="https://res.cloudinary.com/djb3n17c0/video/upload/v1682313592/JSR_Production_House_Title_Film_fm2mjr.mp4"
-          alt=""
-          autoPlay
-          loop
-          muted
-        />
-        
-      </div>
-
-      <div className="flex relative top-0 justify-center w-[100%]">
-        <video
-          className="w-[350px] h-[200px]  lg:w-[1200px] lg:h-[600px] z-[-1] px-5"
-          src="https://res.cloudinary.com/djb3n17c0/video/upload/v1682313592/JSR_Production_House_Title_Film_fm2mjr.mp4"
-          alt=""
-          autoPlay
-          loop
-          muted
-        />
-        
-      </div> */}
     </>
   );
 };

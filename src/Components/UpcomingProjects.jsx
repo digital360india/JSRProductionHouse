@@ -34,44 +34,6 @@ const UpcomingProjects = () => {
 
     return () => clearTimeout(timeOutId);
   }, []);
-  // const array = [
-  //   {
-  //     title: "AGENT ONE",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688559142/AGENT-1_h2ftpb.jpg",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Tarun Singh Rawat",
-
-  //     link: "https://youtu.be/w-GxPBP4piA",
-  //   },
-  //   {
-  //     title: "CHHAL",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688559334/CHHAL_jadugq.jpg",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Yogesh Vats",
-
-  //     link: "https://youtu.be/gXz1Kuu9hq4",
-  //   },
-  //   {
-  //     title: "MUSSORIIE BOYZ",
-  //     img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688559458/MB_q5sspe.jpg ",
-
-  //     producer: "Tarun Singh Rawat",
-  //     director: "Hriday V Shetty",
-
-  //     link: "https://youtu.be/XbeCM5eQmzM",
-  //   },
-  //   // {
-  //   //   title: "72 HOURS : MARTYR WHO NEVER DIED",
-  //   //   img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1688557574/72-hours_iy58yh.jpg",
-
-  //   //   producer: "Tarun Singh Rawat",
-  //   //   director: "Harsh Kumar",
-
-  //   //   link: "https://youtu.be/b9b8nulTBeM",
-  //   // },
-  // ];
 
   return (
     <>
