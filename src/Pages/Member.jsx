@@ -30,6 +30,9 @@ const Member = () => {
           className="h-[400px] lg:h-[500px] w-full object-cover"
         />
       </div>
+      <div className="text-2xl lg:text-6xl text-center bg-black text-white pt-10">
+        BOARD OF DIRECTORS
+      </div>
 
       <div className="bg-black  ">
         <ul className="flex flex-col  items-center w-full  px-4 lg:px-12 py-0 lg:py-20">
