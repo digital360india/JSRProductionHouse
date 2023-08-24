@@ -30,7 +30,7 @@ const Hero = () => {
         <SwiperSlide>
           <div className="flex  justify-center w-full">
             <video
-              className="w-[500px] h-[300px]  lg:w-full lg:h-[900px] "
+              className="w-[500px] h-[300px] md:w-full  lg:w-full lg:h-[900px] "
               src="https://res.cloudinary.com/djb3n17c0/video/upload/v1691128321/JSR_MOUNTAIN_INTRO_RE-EDITED_2k_ajttgj.mp4 "
               alt=""
               autoPlay

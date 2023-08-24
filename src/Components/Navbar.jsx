@@ -122,12 +122,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
             </ul>
           </div>
         </div>
-      </div>
-      {/*<Slideover isOpen={open} onClose={handleOnClose}>
-        <div className="flex flex-col">
-          <Button onClick={handleOnClose}>ok</Button>
-        </div>
-      </Slideover> */}
+      </div> 
       {openRight && (
         <div className="">
           <React.Fragment>
@@ -138,9 +133,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
               className="p-4 bg-black opacity-80 absolute"
             >
               <div className="mb-6 flex items-center justify-end ">
-                {/* <Typography variant="h5" color="blue-gray">
-              Drawer on Right
-            </Typography> */}
+                
                 <IconButton variant="text" color="white" onClick={DrawerRight}>
                   <XMarkIcon strokeWidth={2} className="h-5 w-5" />
                 </IconButton>

@@ -4,7 +4,7 @@ import Hero from "../Components/Hero";
 import UpcomingProjects from "../Components/UpcomingProjects";
 // import OurWork from "../Components/OurWork";
 import ReleasedProjects from "../Components/ReleasedProjects";
-import FutureProjects from "../Components/FutureProjects";
+// import FutureProjects from "../Components/FutureProjects";
 import OurChannel from "../Components/OurChannel";
 import WorkWithUs from "../Components/WorkWithUs";
 import Footer from "../Components/Footer";
@@ -30,7 +30,7 @@ const Home = () => {
           <About />
           <UpcomingProjects />
           <ReleasedProjects />
-          <FutureProjects />
+          {/* <FutureProjects /> */}
           <Gallery />
           <OurChannel />
           <WorkWithUs />

@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "../future.css";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import { useEffect, useState } from "react";
 import SkeletonCard from "./SkeletonCard";
 
@@ -50,6 +50,10 @@ const UpcomingProjects = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
@@ -71,7 +75,7 @@ const UpcomingProjects = () => {
             spaceBetween: 50,
           },
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className="mySwiper p-2"
       >
         {loading

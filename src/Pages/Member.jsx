@@ -33,8 +33,7 @@ const Member = () => {
       <div className="text-2xl lg:text-6xl text-center bg-black text-white pt-10">
         BOARD OF DIRECTORS
       </div>
-
-      <div className="bg-black  ">
+      <div className="bg-black">
         <ul className="flex flex-col  items-center w-full  px-4 lg:px-12 py-0 lg:py-20">
           <li className=" lg:border-l-[2px] border-gray-100 opacity-10 h-[300%] absolute z-1  left-4 lg:left-20"></li>
           <li className="lg:border-l-[2px] border-gray-100 opacity-10 left-[50%] h-[300%] absolute z-1"></li>
