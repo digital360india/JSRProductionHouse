@@ -28,7 +28,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                 className="w-10 h-12"
                 src="https://cdn.discordapp.com/attachments/1078905801017659432/1099960093216354415/JSR_logo.png"
                 alt=""
-              />{" "}
+              />
             </Link>
           </div>
           <div
@@ -76,7 +76,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
       )}
 
       {/* desk nav */}
-      <div className="hidden md:flex md:flex-col px-[100px] pt-2 text-white">
+      <div className="hidden md:flex md:flex-col px-[100px]  pt-2 text-white">
         <div className="flex justify-between items-center">
           <div className="w-[100px] h-[50px] flex items-center lg:h-[80px] ">
             <Link to="/">
@@ -122,7 +122,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
             </ul>
           </div>
         </div>
-      </div> 
+      </div>
       {openRight && (
         <div className="">
           <React.Fragment>
@@ -133,7 +133,6 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
               className="p-4 bg-black opacity-80 absolute"
             >
               <div className="mb-6 flex items-center justify-end ">
-                
                 <IconButton variant="text" color="white" onClick={DrawerRight}>
                   <XMarkIcon strokeWidth={2} className="h-5 w-5" />
                 </IconButton>

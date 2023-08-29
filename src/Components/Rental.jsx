@@ -8,9 +8,74 @@ Aos.init({
 const Rental = () => {
   return (
     <div>
-      {" "}
       <div className="bg-black p-5 md:p-12 px-6 h-full w-[100%] text-white ">
-        <div className="flex flex-col lg:flex-row pb-10 lg:pb-40">
+        <h1 className="text-2xl lg:text-6xl text-center bg-black text-white pt-5 lg:pt-2 pb-8 lg:pb-20">
+          Professional Cameras
+        </h1>
+
+        <div className="flex justify-center gap-[550px]">
+          <div className="text-2xl lg:text-4xl text-center bg-black text-white pt-5 lg:pt-2 pb-8 lg:pb-20">
+            ARRI
+          </div>
+          <div className="text-2xl lg:text-4xl text-center bg-black text-white pt-5 lg:pt-2 pb-8 lg:pb-20">
+            SONY
+          </div>
+        </div>
+
+        <div className="flex justify-center gap-36">
+          {/* <img
+            src="https://res.cloudinary.com/djb3n17c0/image/upload/v1693310137/IMG20230601130958_fhcudh.jpg"
+            alt=""
+            className="w-[320px] md:w-[600px] lg:w-[300px] lg:h-[320px] xl:w-[400px] xl:h-[420px]"
+            data-aos="fade-up"
+          /> */}
+          <img
+            src="https://res.cloudinary.com/djb3n17c0/image/upload/v1693310136/IMG20230601130923_hakz8v.jpg"
+            alt=""
+            className="w-[320px] md:w-[600px] lg:w-[300px] lg:h-[320px] xl:w-[450px] xl:h-[420px]"
+            data-aos="fade-up"
+          />
+          <img
+            src="https://res.cloudinary.com/djb3n17c0/image/upload/v1693310131/sony-venice2-kit_ffsb3h.jpg"
+            alt=""
+            className="w-[320px] md:w-[600px] lg:w-[300px] lg:h-[320px] xl:w-[450px] xl:h-[420px]"
+            data-aos="fade-up"
+          />
+        </div>
+        <h1 className="text-2xl lg:text-6xl text-center bg-black text-white pt-5 lg:pt-2 pb-8 lg:pb-20 mt-10">
+          Professional Cameras
+        </h1>
+
+        <div className="flex justify-center gap-[550px]">
+          <div className="text-2xl lg:text-4xl text-center bg-black text-white pt-5 lg:pt-2 pb-8 lg:pb-20">
+            ARRI
+          </div>
+          <div className="text-2xl lg:text-4xl text-center bg-black text-white pt-5 lg:pt-2 pb-8 lg:pb-20">
+            SONY
+          </div>
+        </div>
+
+        <div className="flex justify-center gap-36">
+          {/* <img
+            src="https://res.cloudinary.com/djb3n17c0/image/upload/v1693310137/IMG20230601130958_fhcudh.jpg"
+            alt=""
+            className="w-[320px] md:w-[600px] lg:w-[300px] lg:h-[320px] xl:w-[400px] xl:h-[420px]"
+            data-aos="fade-up"
+          /> */}
+          <img
+            src="https://res.cloudinary.com/djb3n17c0/image/upload/v1693310136/IMG20230601130923_hakz8v.jpg"
+            alt=""
+            className="w-[320px] md:w-[600px] lg:w-[300px] lg:h-[320px] xl:w-[450px] xl:h-[420px]"
+            data-aos="fade-up"
+          />
+          <img
+            src="https://res.cloudinary.com/djb3n17c0/image/upload/v1693310131/sony-venice2-kit_ffsb3h.jpg"
+            alt=""
+            className="w-[320px] md:w-[600px] lg:w-[300px] lg:h-[320px] xl:w-[450px] xl:h-[420px]"
+            data-aos="fade-up"
+          />
+        </div>
+        {/* <div className="flex flex-col lg:flex-row pb-10 lg:pb-40">
           <img
             src="https://cdn.discordapp.com/attachments/1078905801017659432/1099947451965775912/pre-prod.jpg"
             alt=""
@@ -182,7 +247,7 @@ const Rental = () => {
             className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] lg:ml-16 xl:ml-20 "
             data-aos="fade-up"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

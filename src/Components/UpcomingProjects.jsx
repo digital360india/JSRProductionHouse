@@ -39,9 +39,9 @@ const UpcomingProjects = () => {
     <>
       <div className="">
         <div className="text-center pt-10 lg:pt-28 z-30 tracking-[2px]  lg:tracking-[6px]  ">
-          <div className=" text-2xl md:text-lg lg:text-xl pb-2 lg:pb-5">
+          <h1 className=" text-2xl md:text-lg lg:text-xl pb-2 lg:pb-5">
             JSR PRODUCTION HOUSE
-          </div>
+          </h1>
           <div className="text-4xl md:text-4xl lg:text-7xl pb-10 lg:pb-20">
             UPCOMING PROJECTS
           </div>

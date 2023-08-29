@@ -10,6 +10,7 @@ import WorkWithUs from "../Components/WorkWithUs";
 import Footer from "../Components/Footer";
 import About from "../Components/About";
 import Gallery from "../Components/Gallery/Gallery";
+import Ventures from "../Components/Ventures";
 
 const Home = () => {
   useEffect(() => {
@@ -20,8 +21,8 @@ const Home = () => {
     <>
       <div className="inset-1">
         <Navbar navColor={"text-black"} />
+        <Hero />
       </div>
-      <Hero />
       <div>
         <ul className="flex flex-col items-center w-full  px-4 lg:px-20 py-0 lg:py-3">
           {/* <li className=" lg:border-l-[2px] border-slate-100 h-[650%]  absolute z-[-1]  left-4 lg:left-20"></li>
@@ -32,6 +33,7 @@ const Home = () => {
           <ReleasedProjects />
           {/* <FutureProjects /> */}
           <Gallery />
+          <Ventures />
           <OurChannel />
           <WorkWithUs />
         </ul>
