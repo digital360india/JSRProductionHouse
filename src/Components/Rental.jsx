@@ -74,7 +74,7 @@ const Rental = () => {
         </div>
 
         <h1 className="text-2xl lg:text-6xl text-center bg-black text-white  pt-10 pb-5 lg:pt-24 lg:pb-10 ">
-          Professional Cameras
+          Accomodations
         </h1>
         <div className="flex flex-col md:flex-row justify-center gap-4 lg:gap-20">
           <div className="text-xl lg:text-3xl text-center bg-black text-white pt-5 ">
