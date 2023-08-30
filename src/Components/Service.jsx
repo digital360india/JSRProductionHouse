@@ -181,7 +181,7 @@ const Service = () => {
             </ul>
           </div>
           <img
-            src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691129872/VIRTUAL_wtdksz.png"
+            src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691060860/gfsxgfs_ipg5pm.jpg"
             alt=""
             className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] lg:ml-16 xl:ml-20  "
             data-aos="fade-up"

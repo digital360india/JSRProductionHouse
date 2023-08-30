@@ -21,12 +21,12 @@ const Home = () => {
   return (
     <>
       {/* <div className="absolute h-52 w-32 flex-col"> */}
-      <div className="fixed top-[320px] lg:top-[260px] right-0 h-72 w-10 items-center flex flex-col gap-10 justify-center bg-gray-200 opacity-50 z-50 rounded-tl-md rounded-bl-md    ">
+      <div className="fixed top-[320px] lg:top-[260px] right-0 h-72 w-10 items-center flex flex-col gap-10 justify-center bg-gray-200 opacity-70 z-50 rounded-tl-md rounded-bl-md    ">
         <a href="https://www.facebook.com/JSRProductionhouse" target="_blank">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
             alt=""
-            className="w-7 h-7 hover:scale-125 duration-200"
+            className="w-7 h-7 hover:scale-125 duration-200 opacity-100"
           />
         </a>
         <a
