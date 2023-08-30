@@ -21,7 +21,7 @@ const Team = () => {
               <ul className="font2 flex flex-col gap-2">
                 <li> Chairman</li>
                 <li className="opacity-40">
-                  Vice Chairman of JSR Group. Born in 14 January 1988, Tarun
+                  Tarun
                   Singh Rawat is a titled entrepreneur, producer and director.
                   As a young, successful producer and businessman, he has been
                   working hard to build a legacy as one of the most influential
@@ -61,13 +61,14 @@ const Team = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row pb-10 lg:pb-40">
-            <img
+            {/* <img
               src="https://cdn.discordapp.com/attachments/1078905801017659432/1099956366891831397/Tarun.png"
               alt=""
               className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] object-contain"
               data-aos="fade-up"
-            />
-            <div className="px-0 lg:pl-16 lg:leading-7 pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
+            /> */}
+            <div className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] object-contain"></div>
+            <div className="px-0 lg:pl-16 lg:leading-7 float-right justify-start pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
               <h1
                 className=" text-2xl lg:text-5xl pt-5 lg:pb-5"
                 data-aos="fade-up"
@@ -116,7 +117,7 @@ const Team = () => {
               <ul className="font2 flex flex-col gap-2">
                 {/* <li>Managing Director</li> */}
                 <li className="opacity-40">
-                  Hemal Rawat, the Managing Director of JSR Group, is a
+                  Hemal Rawat is a
                   cornerstone of strength, wisdom, and entrepreneurship within
                   the group's dynamic narrative. Beyond being a supportive
                   partner and a nurturing mother, Hemal Rawat is a distinguished
@@ -148,7 +149,7 @@ const Team = () => {
               </ul>
             </div>
             <img
-              src="https://cdn.discordapp.com/attachments/1078905801017659432/1099956366673723402/Prashil.png"
+              src="https://hbeautystudio.com/img/Untitled-4.jpg"
               alt=""
               className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] lg:ml-16 xl:ml-20 object-contain "
               data-aos="fade-up"
@@ -176,7 +177,7 @@ const Team = () => {
               <ul className="font2 flex flex-col gap-2">
                 {/* <li>Managing Director</li> */}
                 <li className="opacity-40">
-                  Managing Director of JSR Group. Born in 7 January 1991,
+                  Born in 7 January 1991,
                   Prashil Rawat is a titled entrepreneur and actor. He has a
                   strong inclination for acting, which has propelled him to
                   pursue it as a career. Prashil has a strong relationship with

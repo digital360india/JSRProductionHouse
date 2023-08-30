@@ -5,7 +5,7 @@ const About = () => {
     <div className="flex flex-col  justify-center pt-10 lg:pt-2  ">
       <div className="text-center flex flex-col items-center text-gray-600 leading-7">
         <h1 className="text-4xl tracking-wide lg:tracking-widest lg:text-7xl pb-4 pt-5 lg:pt-16 text-black">
-          ABOUT JSR Production
+          ABOUT JSR Productions
         </h1>
 
         {/* for large */}
@@ -44,16 +44,16 @@ const About = () => {
         </div>
 
         {/* for mobile */}
-        <div className="lg:hidden font2 text-center px-5 pb-5">
-          JSR Production House is a well-established production house located
-          amidst the magnificent hills of Uttarakhand. With a vision to create
+        <div className="lg:hidden font2  text-justify px-5 pb-5">
+          JSR Production House is a well-established production house in India located
+          amidst the magnificent hills of Dehradun, Uttarakhand. With a vision to create
           an everlasting impact through our full-service production house. Under
-          the able guidance of Mr Tarun Singh Rawat, Vice Chairman- JSR Group,
+          the able guidance of Mr. Tarun Singh Rawat, Vice Chairman- JSR Group,
           elder son of Mr. Jaswant Rawat. We have thrived in a short period and
           have successfully emerged as one of the best production houses in
           India. JSR Production House is a revered and award-winning
           organization that provides a platform to showcase your potential and
-          business. We understand the importance of quality in our work,so we
+          business. We understand the importance of quality in our work, so we
           ensure that all our projects are completed with perfection. We know
           the value of time and hence ensure that we complete the project within
           the given time frame. We believe in delivering top-notch services at
