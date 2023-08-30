@@ -112,9 +112,9 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                   RENTALS
                 </li>
               </Link>
-              <li onClick={DrawerRight}>
+              {/* <li onClick={DrawerRight}>
                 <HiBars2 className="h-10 w-14 -mt-2 hover:scale-125 hover:opacity-50  duration-200" />
-              </li>
+              </li> */}
               {/* {insta && } */}
               {/* <div className="w-64 bg-black">
                 <h1>JSR PRODUCTION</h1>
