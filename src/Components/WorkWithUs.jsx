@@ -28,9 +28,9 @@ const WorkWithUs = () => {
           // console.log(response);
           if (response.status == 200) {
             setSuccess(true);
-            setTimeout(()=> {
+            setTimeout(() => {
               setSuccess(false);
-            }, 2500)
+            }, 2500);
           }
         })
         .catch((error) => {
@@ -45,7 +45,8 @@ const WorkWithUs = () => {
   const handleSubmit = () => {
     if (message == "" || name == "" || whatsapp == "" || email == "") {
       setWarning(true);
-    } else {postMessage();
+    } else {
+      postMessage();
       setWarning(false);
     }
   };
@@ -57,11 +58,11 @@ const WorkWithUs = () => {
   return (
     <div className=" justify-center p-10 pb-10 lg:pb-20 flex gap-32 lg:flex-row  flex-wrap text-5xl lg:text-6xl pt-8 leading-14 lg:leading-16 tracking-[4px] lg:tracking-[6px]">
       <>
-        <div className="flex flex-col  items-center lg:items-end">
+        <div className="flex flex-col justify-center items-center lg:items-end">
           <div className="w-[300px] lg:w-[450px] p-5 lg:pl-10 lg:p-2 text-center">
             FOR ANY QUERIES LEAVE US A MESSAGE!
           </div>
-          <div className="flex gap-8 w-60  pt-2 lg:pt-8">
+          {/* <div className="flex gap-8 w-60  pt-2 lg:pt-8">
             <a
               href="https://www.facebook.com/JSRProductionhouse"
               target="_blank"
@@ -92,7 +93,7 @@ const WorkWithUs = () => {
             <a href="">
               <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" />
             </a>
-          </div>
+          </div> */}
         </div>
       </>
       <>

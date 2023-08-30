@@ -4,7 +4,17 @@ import FooterNav from "../Components/FooterNav";
 import Rental from "../Components/Rental";
 import { BsTwitter } from "react-icons/bs";
 import axios from "axios";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "../released.css";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper";
 const Rentals = () => {
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
@@ -53,12 +63,41 @@ const Rentals = () => {
     }
   };
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     setSuccess(false);
     setWarning(false);
   }, []);
   return (
     <>
+      <div className="fixed top-[320px] lg:top-[260px] h-72 w-12 items-center flex flex-col gap-10 justify-center bg-gray-500 bg-blend-darken z-50 rounded-tr-md rounded-br-md    ">
+        <a href="https://www.facebook.com/JSRProductionhouse" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+            alt=""
+            className="w-8 h-8 hover:scale-125 duration-200"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/jsrproductionhouse/?igshid=YmMyMTA2M2Y%3D"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png"
+            alt=""
+            className="w-8 h-8 hover:scale-125  duration-200"
+          />
+        </a>
+        <a href="https://youtube.com/@JSRRECORDLABEL" target="_blank">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+            alt=""
+            className="w-8 h-8 hover:scale-125  duration-200"
+          />
+        </a>
+        <a href="">
+          <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" />
+        </a>
+      </div>
       <div className="">
         <div className="bg-transparent absolute z-50 inset-1  ">
           <Navbar
@@ -72,30 +111,75 @@ const Rentals = () => {
             </h1>
           </div>
         </div>
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper hidden lg:flex "
+        >
+          <SwiperSlide>
+            <div className="flex  justify-center w-full">
+              <img
+                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png"
+                // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
+                alt=""
+                className="h-[400px] lg:h-[500px] w-full object-cover"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex  justify-center w-full">
+              <img
+                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png"
+                // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
+                alt=""
+                className="h-[400px] lg:h-[500px] w-full object-cover"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="flex  justify-center w-full">
+              <img
+                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png"
+                // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
+                alt=""
+                className="h-[400px] lg:h-[500px] w-full object-cover"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
         <img
           src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png"
           alt=""
-          className="h-[400px] lg:h-[500px] w-full object-cover"
+          className="lg:hidden h-[400px] lg:h-[500px] w-full object-cover"
         />
       </div>
       <div className="bg-black  ">
         <ul className="flex flex-col  items-center w-full  px-4 lg:px-12 py-0 lg:py-20">
-          <li className=" lg:border-l-[2px] border-gray-100 opacity-10 h-[200%] absolute z-1  left-4 lg:left-20"></li>
-          <li className="lg:border-l-[2px] border-gray-100 opacity-10 left-[50%] h-[200%] absolute z-1"></li>
-          <li className="lg:border-l-[2px] border-gray-100 opacity-10 h-[200%] absolute z-1 right-4 lg:right-20"></li>
+          <li className=" lg:border-l-[2px] border-gray-100 opacity-10 h-[350%] absolute z-1  left-4 lg:left-20"></li>
+          <li className="lg:border-l-[2px] border-gray-100 opacity-10 left-[50%] h-[350%] absolute z-1"></li>
+          <li className="lg:border-l-[2px] border-gray-100 opacity-10 h-[350%] absolute z-1 right-4 lg:right-20"></li>
           <Rental />
         </ul>
       </div>
 
       {/* form */}
 
-      <div className=" justify-center p-10 pb-10 lg:pb-20 lg:pt-20 flex gap-32 lg:flex-row  flex-wrap text-5xl lg:text-6xl pt-8 leading-14 lg:leading-16 tracking-[4px] lg:tracking-[6px]">
+      <div className=" justify-center  p-10 pb-10 lg:pb-20 lg:pt-20 flex gap-32 lg:flex-row  flex-wrap text-5xl lg:text-6xl pt-8 leading-14 lg:leading-16 tracking-[4px] lg:tracking-[6px]">
         <>
-          <div className="flex flex-col  items-center lg:items-end ">
+          <div className="flex flex-col justify-center   items-center lg:items-end ">
             <div className="w-[300px] lg:w-[450px] p-5 lg:pl-10 lg:p-2 text-center">
               FOR PRICE RELATED QUERIES LEAVE US A MESSAGE!
             </div>
-            <div className="flex gap-8 w-60  pt-2 lg:pt-8">
+            {/* <div className="flex gap-8 w-60  pt-2 lg:pt-8">
               <a
                 href="https://www.facebook.com/JSRProductionhouse"
                 target="_blank"
@@ -126,7 +210,7 @@ const Rentals = () => {
               <a href="">
                 <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" />
               </a>
-            </div>
+            </div> */}
           </div>
         </>
         <>

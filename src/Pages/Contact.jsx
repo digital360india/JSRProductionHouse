@@ -6,11 +6,40 @@ import { BsTwitter } from "react-icons/bs";
 
 const Contact = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
     <>
       <Navbar navColor={"text-black"} />
+      <div className="fixed top-[320px] lg:top-[260px] left-0 h-72 w-12 items-center flex flex-col gap-10 justify-center bg-gray-500 bg-blend-darken z-50 rounded-tr-md rounded-br-md    ">
+        <a href="https://www.facebook.com/JSRProductionhouse" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+            alt=""
+            className="w-8 h-8 hover:scale-125 duration-200"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/jsrproductionhouse/?igshid=YmMyMTA2M2Y%3D"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png"
+            alt=""
+            className="w-8 h-8 hover:scale-125  duration-200"
+          />
+        </a>
+        <a href="https://youtube.com/@JSRRECORDLABEL" target="_blank">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+            alt=""
+            className="w-8 h-8 hover:scale-125  duration-200"
+          />
+        </a>
+        <a href="">
+          <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" />
+        </a>
+      </div>
       <div>
         <div className="h-96 w-full bg-slate-200 overflow-hidden">
           <div className="hidden sm:flex">
@@ -61,11 +90,11 @@ const Contact = () => {
 
           <div className="p-10 pb-10 lg:pb-20 flex gap-32 lg:flex-row  flex-col items-center justify-center text-5xl lg:text-6xl pt-20 lg:pt-20 leading-14 lg:leading-16 tracking-[4px] lg:tracking-[6px]">
             <>
-              <div className="flex flex-col items-center lg:items-end">
+              <div className="flex flex-col justify-center items-center lg:items-end">
                 <div className="w-[300px] lg:w-[450px] p-5 lg:pl-10 lg:p-2 text-center">
                   FOR ANY QUERIES LEAVE US A MESSAGE!
                 </div>
-                <div className="flex gap-8 w-60   pt-2 lg:pt-8">
+                {/* <div className="flex gap-8 w-60   pt-2 lg:pt-8">
                   <a href="https://www.facebook.com/JSRProductionhouse">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
@@ -90,7 +119,7 @@ const Contact = () => {
                   <a href="">
                     <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" />
                   </a>
-                </div>
+                </div> */}
               </div>
             </>
             <>
