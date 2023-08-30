@@ -11,27 +11,28 @@ const About = () => {
         {/* for large */}
         <div className="hidden lg:flex flex-col items-center ">
           <p className=" font2 mt-0 lg:mt-4 w-[320px] md:w-[550px] lg:w-[1200px] lg:text-[14px] tracking-wide    ">
-            JSR Production House is a well-established production house located
-            amidst the magnificent hills of Dehradun, Uttarakhand. With a vision
-            to create an everlasting impact
+            JSR Production House is a well-established production house in India
+            located amidst the magnificent hills of Dehradun, Uttarakhand. With
+            a vision to create an everlasting
           </p>
           <p className="lg:w-[1100px] xl:w-[1100px] font2">
-            through our full-service production house. Under the able guidance
-            of Mr Tarun Singh Rawat, Vice Chairman- JSR Group, elder son of Mr.
-            Jaswant Rawat. We have thrived
+            impact through our full-service production house. Under the able
+            guidance of Mr Tarun Singh Rawat, Vice Chairman- JSR Group, elder
+            son of Mr. Jaswant Rawat. We have
           </p>
           <p className="lg:w-[1000px] xl:w-[1000px] font2">
-            in a short period and have successfully emerged as one of the best
-            production houses in India. JSR Production House is a revered and
-            award-winning
+            thrived in a short period and have successfully emerged as one of
+            the best production houses in India. JSR Production House is a
+            revered and award
           </p>
           <p className="lg:w-[900px] xl:w-[900px]  font2">
-            organization that provides a platform to showcase your potential and
-            business. We understand the importance of quality in our work,
+            winning organization that provides a platform to showcase your
+            potential and business.JSR Production house the importance of
+            quality in
           </p>
           <p className="lg:w-[800px] xl:w-[800px]  font2">
-            so we ensure that all our projects are completed with perfection. We
-            know the value of time and hence
+            our work, so we ensure that all our projects are completed with
+            perfection. We know the value of time and hence
           </p>
           <p className="lg:w-[700px]  xl:w-[700px] font2">
             ensure that we complete the project within the given time frame. JSR
