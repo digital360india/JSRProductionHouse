@@ -12,7 +12,7 @@ import { useEffect } from "react";
 function App() {
   async function updateviews(){
     try{
-      const res=await axios.post("http://localhost:8000/Views")
+      const res=await axios.post("https://jsr-backend-x7rr.onrender.com/Views")
       console.log(res) }
           catch(e)
           {console.log(e)    }
