@@ -97,32 +97,32 @@ const WorkWithUs = () => {
         </div>
       </>
       <>
-        <div className=" flex flex-col gap-4 items-center lg:pl-16 justify-center ">
+        <div className=" flex flex-col gap-4 items-center  lg:pl-16 justify-center  ">
           <textarea
             onChange={(e) => setMessage(e.target.value)}
             type="text"
             placeholder="Type your message"
-            className=" font2 border-2 p-4  text-sm h-32 lg:h-64 lg:w-[560px] md:[450px] w-[300px]"
+            className=" font2 border-2 border-gray-900 p-4  text-sm h-32 lg:h-64 lg:w-[560px] md:[450px]  w-[300px]"
           />
           <div className="flex flex-col lg:flex-row gap-2 lg:gap-10 ">
             <input
               onChange={(e) => setName(e.target.value)}
               type="text"
               placeholder="Your name"
-              className="font2 border-2 p-4 text-sm h-16 w-[300px] lg:w-[260px]"
+              className="font2 border-2 border-gray-900 p-4 text-sm h-16 w-[300px] text-gray-900 lg:w-[260px]"
             />
             <input
               onChange={(e) => setWhatsapp(e.target.value)}
               type="text"
               placeholder="Your whatsapp number"
-              className="font2 border-2 p-4 text-sm h-16 w-[300px] lg:w-[260px]"
+              className="font2 border-2 border-gray-900 p-4 text-sm h-16 w-[300px]  lg:w-[260px]"
             />
           </div>
           <input
             onChange={(e) => setEmail(e.target.value)}
             type="text"
             placeholder="Your Email"
-            className=" font2 border-2 p-4  text-sm h-16 lg:h-16 lg:w-[560px] md:w-[450px] w-[300px]"
+            className=" font2 border-2 p-4  border-gray-900 text-sm h-16 lg:h-16 lg:w-[560px] md:w-[450px] w-[300px]"
           />
 
           <a

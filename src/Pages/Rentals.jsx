@@ -247,27 +247,27 @@ const Rentals = () => {
               onChange={(e) => setMessage(e.target.value)}
               type="text"
               placeholder="Type your message"
-              className=" font2 border-2 p-4  text-sm h-32 lg:h-64 lg:w-[560px] md:[450px] w-[300px]"
+              className=" font2 border-2 p-4  text-sm h-32 lg:h-64 border-gray-900 lg:w-[560px] md:[450px] w-[300px]"
             />
             <div className="flex flex-col lg:flex-row gap-2 lg:gap-10 ">
               <input
                 onChange={(e) => setName(e.target.value)}
                 type="text"
                 placeholder="Your name"
-                className="font2 border-2 p-4 text-sm h-16 w-[300px] lg:w-[260px]"
+                className="font2 border-2 p-4 text-sm h-16  border-gray-900 w-[300px] lg:w-[260px]"
               />
               <input
                 onChange={(e) => setWhatsapp(e.target.value)}
                 type="text"
                 placeholder="Whatsapp No."
-                className="font2 border-2 h-16 p-4 text-sm  w-[300px] lg:w-[260px]"
+                className="font2 border-2 h-16 p-4 text-sm border-gray-900  w-[300px] lg:w-[260px]"
               />
             </div>
             <input
               onChange={(e) => setEmail(e.target.value)}
               type="text"
               placeholder="Your Email"
-              className=" font2 border-2 p-4  text-sm h-16 lg:h-16 lg:w-[560px] md:w-[450px] w-[300px]"
+              className=" font2 border-2 p-4  text-sm h-16 lg:h-16  border-gray-900 lg:w-[560px] md:w-[450px] w-[300px]"
             />
             {/* <button className="bg-black w-[300px] md:w-[300px] lg:w-[560px] h-16 tracking-[6px] text-white text-xl hover:opacity-75 duration-200">
             Send

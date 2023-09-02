@@ -56,7 +56,7 @@ const Team = () => {
             />
           </div>
           {/* <div className="text-2xl lg:text-5xl text-center">BOARD OF DIRECTORS</div> */}
-          <div className="text-2xl lg:text-6xl text-center bg-black text-white pb-16  ">
+          <div className="text-2xl lg:text-6xl text-center bg-black relative z-50 text-white pb-12 mt-2 pt-16 -mb-4  ">
             BOARD OF DIRECTORS
           </div>
 
@@ -176,7 +176,7 @@ const Team = () => {
               </p> */}
               <ul className="font2 flex flex-col gap-2">
                 {/* <li>Managing Director</li> */}
-                <li className="opacity-40 text-grey-900">
+                <li className="opacity-40 text-grey-900 text-justify">
                   Born in 7 January 1991,
                   Prashil Rawat is a titled entrepreneur and actor. He has a
                   strong inclination for acting, which has propelled him to
