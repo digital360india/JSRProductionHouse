@@ -34,7 +34,7 @@ const Hero = () => {
             src="https://res.cloudinary.com/djb3n17c0/video/upload/v1693649787/INTRO_j9nzg0.mp4"
             alt=""
             autoPlay
-            // loop
+            loop
             muted
           />
         </div>
@@ -46,7 +46,7 @@ const Hero = () => {
             src="https://res.cloudinary.com/djb3n17c0/video/upload/v1693649840/NON-CINEMASCOPE_logo_cgnxwi.mp4"
             alt=""
             autoPlay
-            // loop
+            loop
             muted
           />
         </div>
