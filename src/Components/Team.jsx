@@ -18,9 +18,9 @@ const Team = () => {
                 camera operation, lighting, sound recording, and on-set
                 coordination.
               </p> */}
-              <ul className="font2 flex flex-col gap-2">
-                <li> Chairman</li>
-                <li className="opacity-40">
+              <ul className="font2 flex flex-col gap-2 text-grey-900 ">
+                <li>Vice Chairman</li>
+                <li className="opacity-40 text-justify ">
                   Tarun
                   Singh Rawat is a titled entrepreneur, producer and director.
                   As a young, successful producer and businessman, he has been
@@ -56,11 +56,11 @@ const Team = () => {
             />
           </div>
           {/* <div className="text-2xl lg:text-5xl text-center">BOARD OF DIRECTORS</div> */}
-          <div className="text-2xl lg:text-6xl text-center bg-black text-white py-16">
+          <div className="text-2xl lg:text-6xl text-center bg-black text-white pb-16  ">
             BOARD OF DIRECTORS
           </div>
 
-          <div className="flex flex-col lg:flex-row pb-10 lg:pb-40">
+          <div className="flex flex-col lg:flex-row pb-10 lg:pb-40 ">
             {/* <img
               src="https://cdn.discordapp.com/attachments/1078905801017659432/1099956366891831397/Tarun.png"
               alt=""
@@ -83,7 +83,7 @@ const Team = () => {
               </p> */}
               <ul className="font2 flex flex-col gap-2">
                 {/* <li>Founder/Chairman</li> */}
-                <li className="opacity-40">
+                <li className="opacity-40  text-justify text-grey-900">
                   J S Rawat, the visionary founder and owner of JSR Group,
                   hailing from Uttarakhand, embarked on an inspiring journey
                   that began with humble roots. Starting with the real estate
@@ -116,7 +116,7 @@ const Team = () => {
               </p> */}
               <ul className="font2 flex flex-col gap-2">
                 {/* <li>Managing Director</li> */}
-                <li className="opacity-40">
+                <li className="opacity-40  text-justify text-grey-900">
                   Hemal Rawat is a
                   cornerstone of strength, wisdom, and entrepreneurship within
                   the group's dynamic narrative. Beyond being a supportive
@@ -176,7 +176,7 @@ const Team = () => {
               </p> */}
               <ul className="font2 flex flex-col gap-2">
                 {/* <li>Managing Director</li> */}
-                <li className="opacity-40">
+                <li className="opacity-40 text-grey-900">
                   Born in 7 January 1991,
                   Prashil Rawat is a titled entrepreneur and actor. He has a
                   strong inclination for acting, which has propelled him to
