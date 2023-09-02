@@ -114,13 +114,13 @@ const Rental = () => {
           <div className="text-xl lg:text-3xl text-center bg-black text-white pt-5 space-y-5">
             <h1>LUXURY CARS</h1>
             <img
-              src="https://res.cloudinary.com/djb3n17c0/image/upload/v1693376222/DSC08435_njgzmf.jpg"
+              src="https://res.cloudinary.com/djb3n17c0/image/upload/v1693658575/f_ppskq9.png"
               alt=""
               className="w-[320px] object-fill h-[300px]  md:w-[600px] lg:w-[300px] lg:h-[320px] xl:w-[450px] xl:h-[420px]"
               data-aos="fade-up"
             />
           </div>
-          <div className="text-xl lg:text-3xl text-center bg-black text-white pt-5 ">
+          <div className="text-xl lg:text-3xl text-center bg-black text-white space-y-5 pt-5 ">
             <h1>VANITY VANS{" "}</h1>
             <img
               src="https://res.cloudinary.com/djb3n17c0/image/upload/v1693376238/kerala_caravan_tourism_a3tucu.jpg"
