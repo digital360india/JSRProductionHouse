@@ -88,14 +88,14 @@ const Rentals = () => {
             className="w-7 h-7 hover:scale-125  duration-200"
           />
         </a>
-        <a href="https://youtube.com/@JSRRECORDLABEL" target="_blank">
+        <a href="https://www.youtube.com/@jsrproductionhouse9127" target="_blank">
           <img
             src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
             alt=""
             className="w-7 h-7 hover:scale-125  duration-200"
           />
         </a>
-        <a href="">
+        <a href="https://twitter.com/house_jsr?lang=en">
           {/* <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" /> */}
           <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
         </a>
@@ -108,12 +108,13 @@ const Rentals = () => {
             bar={"text-white"}
           />
           <div className="flex justify-center items-center">
-            <h1 className="text-7xl text-white tracking-wider absolute top-44 lg:top-52">
+            <h1 className=" text-4xl  md:text-7xl text-white tracking-wider  absolute sm:top-32 md:top-44 lg:top-48">
               RENTALS
             </h1>
           </div>
         </div>
            <Carousel 
+          
            showThumbs={false}
            showArrows={false}
            showIndicators={false}
@@ -183,11 +184,11 @@ const Rentals = () => {
             </div>
           </SwiperSlide>
         </Swiper> */}
-        <img
+        {/* <img
           src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png"
           alt=""
           className="lg:hidden h-[400px] lg:h-[500px] w-full object-cover"
-        />
+        /> */}
       </div>
       <div className="bg-black  ">
         <ul className="flex flex-col  items-center w-full  px-4 lg:px-12 py-0 lg:py-20">
@@ -227,7 +228,7 @@ const Rentals = () => {
                   className="w-8 h-8 hover:scale-125  duration-200"
                 />
               </a>
-              <a href="https://youtube.com/@JSRRECORDLABEL" target="_blank">
+              <a href="https://www.youtube.com/@jsrproductionhouse9127" target="_blank">
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
                   alt=""

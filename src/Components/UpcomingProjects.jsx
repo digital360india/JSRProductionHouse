@@ -42,9 +42,9 @@ const UpcomingProjects = () => {
           <h1 className=" text-2xl md:text-lg lg:text-xl pb-2 lg:pb-5">
             JSR PRODUCTION HOUSE
           </h1>
-          <div className="text-4xl md:text-4xl lg:text-7xl pb-10 lg:pb-20">
+          <h2 className="text-4xl md:text-4xl lg:text-7xl pb-10 lg:pb-20">
             UPCOMING PROJECTS
-          </div>
+          </h2>
         </div>
       </div>
       <Swiper

@@ -83,7 +83,7 @@ const WorkWithUs = () => {
                 className="w-8 h-8 hover:scale-125  duration-200"
               />
             </a>
-            <a href="https://youtube.com/@JSRRECORDLABEL" target="_blank">
+            <a href="https://www.youtube.com/@jsrproductionhouse9127" target="_blank">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
                 alt=""

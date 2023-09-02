@@ -11,12 +11,12 @@ const Contact = () => {
   return (
     <>
       <Navbar navColor={"text-black"} />
-      <div className="fixed top-[320px] lg:top-[260px] left-0 h-72 w-12 items-center flex flex-col gap-10 justify-center bg-gray-500 bg-blend-darken z-50 rounded-tr-md rounded-br-md    ">
+      <div className="fixed top-[320px] lg:top-[260px] right-0 h-72 w-10 items-center flex flex-col gap-10 justify-center bg-gray-200 opacity-70 z-50 rounded-tl-md rounded-bl-md    ">
         <a href="https://www.facebook.com/JSRProductionhouse" target="_blank">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
             alt=""
-            className="w-8 h-8 hover:scale-125 duration-200"
+            className="w-7 h-7 hover:scale-125 duration-200 opacity-100"
           />
         </a>
         <a
@@ -26,21 +26,22 @@ const Contact = () => {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png"
             alt=""
-            className="w-8 h-8 hover:scale-125  duration-200"
+            className="w-7 h-7 hover:scale-125  duration-200"
           />
         </a>
-        <a href="https://youtube.com/@JSRRECORDLABEL" target="_blank">
+        <a href="https://www.youtube.com/@jsrproductionhouse9127" target="_blank">
           <img
             src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
             alt=""
-            className="w-8 h-8 hover:scale-125  duration-200"
+            className="w-7 h-7 hover:scale-125  duration-200"
           />
         </a>
-        <a href="">
-          <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" />
+        <a href="https://twitter.com/house_jsr?lang=en">
+          {/* <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" /> */}
+          <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
         </a>
       </div>
-      <div>
+       <div>
         <div className="h-96 w-full bg-slate-200 overflow-hidden">
           <div className="hidden sm:flex">
             <iframe
@@ -109,7 +110,7 @@ const Contact = () => {
                       className="w-8 h-8 hover:scale-125  duration-200"
                     />
                   </a>
-                  <a href="https://youtube.com/@JSRRECORDLABEL">
+                  <a href="https://www.youtube.com/@jsrproductionhouse9127">
                     <img
                       src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
                       alt=""
