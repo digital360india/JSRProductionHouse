@@ -27,7 +27,7 @@ const Gallery = (props) => {
 
   return (
     <>
-      <h1 className="text-center pt-20 lg:pt-28 text-4xl lg:text-6xl tracking-[2px]  lg:tracking-[6px] pb-10 lg:pb-20">
+      <h1 className="text-center pt-20 -mt-5 lg:pt-28 text-4xl lg:text-6xl tracking-[2px]  lg:tracking-[6px] pb-10 lg:pb-20">
         GALLERY
       </h1>
       <div className="bg-black">

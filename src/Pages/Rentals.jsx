@@ -3,9 +3,10 @@ import Navbar from "../Components/Navbar";
 import FooterNav from "../Components/FooterNav";
 import Rental from "../Components/Rental";
 import { BsTwitter } from "react-icons/bs";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -95,7 +96,8 @@ const Rentals = () => {
           />
         </a>
         <a href="">
-          <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" />
+          {/* <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" /> */}
+          <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
         </a>
       </div>
       <div className="">
@@ -111,7 +113,32 @@ const Rentals = () => {
             </h1>
           </div>
         </div>
-        <Swiper
+           <Carousel 
+           showThumbs={false}
+           showArrows={false}
+           showIndicators={false}
+           infiniteLoop={true}
+           autoPlay={true}
+           stopOnHover={false}
+           interval={4000}
+           transitionTime={2000}
+           animationHandler="fade"
+           showStatus={false}
+           
+           >
+                <div>
+                    <img src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png" className=" " />
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130582/TEAM_l5vyw0.png" className=" "  />
+                    
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691131047/EXTRA._gumksl.png" className=" "  />
+                    
+                </div>
+            </Carousel>
+        {/* <Swiper
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
@@ -155,7 +182,7 @@ const Rentals = () => {
               />
             </div>
           </SwiperSlide>
-        </Swiper>
+        </Swiper> */}
         <img
           src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png"
           alt=""

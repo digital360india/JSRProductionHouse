@@ -1,14 +1,26 @@
 import Home from "./Pages/Home";
+import axios from 'axios'
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Services from "./Pages/Services";
 // import OurTeam from "./Pages/OurTeam";
 import Contact from "./Pages/Contact";
 import Rentals from "./Pages/Rentals";
 import Member from "./Pages/Member";
+import { useEffect } from "react";
 // import { AnimatePresence } from "framer-motion/dist/framer-motion";
 
 function App() {
-  // const location = useLocation();
+  async function updateviews(){
+    try{
+      const res=await axios.post("http://localhost:8000/Views")
+      console.log(res) }
+          catch(e)
+          {console.log(e)    }
+  }
+  useEffect(()=>{
+    updateviews()
+  },[])
+
   return (
     <>
       {/* <AnimatePresence> */}

@@ -5,7 +5,7 @@ const OurChannel = () => {
       <h1 className="text-5xl md:text-5xl lg:text-7xl  tracking-[2px]  lg:tracking-[6px]  py-10">
         OUR CHANNELS
       </h1>
-      <p className="font2 mt-0 py-2 lg:py-6 lg:mt-4 w-[320px] md:w-[550px] lg:w-[800px] lg:text-[14px] tracking-wide leading-7 text-gray-600 ">
+      <p className="font2 mt-0 py-2 lg:py-6 lg:mt-4 w-[320px] md:w-[550px] text-gray-900 lg:w-[800px] lg:text-[14px] tracking-wide leading-7 ">
         JSR Production House offers a variety of production services and have
         YouTube channels, JSR Production House, JSR Record Label and JSR Records
         Regional. Our channel is packed with diverse recreational content that

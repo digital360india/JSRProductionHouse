@@ -10,41 +10,41 @@ const About = () => {
 
         {/* for large */}
         <div className="hidden lg:flex flex-col items-center ">
-          <p className=" font2 mt-0 lg:mt-4 w-[320px] md:w-[550px] lg:w-[1200px] lg:text-[14px] tracking-wide    ">
+          <p className=" font2 mt-0 lg:mt-4 w-[320px] md:w-[550px] lg:w-[1200px] lg:text-[14px] tracking-wide text-gray-900    ">
             JSR Production House is a well-established production house in India
             located amidst the magnificent hills of Dehradun, Uttarakhand. With
             a vision to create an everlasting
           </p>
-          <p className="lg:w-[1100px] xl:w-[1100px] font2">
+          <p className="lg:w-[1100px] xl:w-[1100px] font2 text-gray-900">
             impact through our full-service production house. Under the able
             guidance of Mr Tarun Singh Rawat, Vice Chairman- JSR Group, elder
             son of Mr. Jaswant Rawat. We have
           </p>
-          <p className="lg:w-[1000px] xl:w-[1000px] font2">
+          <p className="lg:w-[1000px] xl:w-[1000px] font2 text-gray-900">
             thrived in a short period and have successfully emerged as one of
             the best production houses in India. JSR Production House is a
             revered and award
           </p>
-          <p className="lg:w-[900px] xl:w-[900px]  font2">
+          <p className="lg:w-[900px] xl:w-[900px] text-gray-900  font2">
             winning organization that provides a platform to showcase your
             potential and business.JSR Production house the importance of
             quality in
           </p>
-          <p className="lg:w-[800px] xl:w-[800px]  font2">
+          <p className="lg:w-[800px] xl:w-[800px] text-gray-900  font2">
             our work, so we ensure that all our projects are completed with
             perfection. We know the value of time and hence
           </p>
-          <p className="lg:w-[700px]  xl:w-[700px] font2">
+          <p className="lg:w-[700px]  xl:w-[700px] text-gray-900 font2">
             ensure that we complete the project within the given time frame. JSR
             Production House believe in
           </p>
-          <p className="lg:w-[600px]  xl:w-[600px] font2">
+          <p className="lg:w-[600px]  xl:w-[600px] text-gray-900 font2">
             delivering top-notch services at an affordable price.
           </p>
         </div>
 
         {/* for mobile */}
-        <div className="lg:hidden font2  text-justify px-5 pb-5">
+        <div className="lg:hidden font2  text-justify px-5 pb-5 text-gray-900">
           JSR Production House is a well-established production house in India located
           amidst the magnificent hills of Dehradun, Uttarakhand. With a vision to create
           an everlasting impact through our full-service production house. Under
