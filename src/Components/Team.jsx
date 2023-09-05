@@ -101,7 +101,7 @@ const Team = () => {
             </div>
           </div>
 
-          <div className="flex flex-col-reverse items-start lg:mx-auto lg:w-[84vw] lg:justify-around lg:flex-row  pb-10 lg:pb-40">
+          <div className="flex flex-col-reverse items-center lg:mx-auto lg:w-[84vw] lg:justify-around lg:flex-row  pb-10 lg:pb-40">
             <div className="px-0 lg:pr-4 lg:pl-5 lg:leading-7 pt-5 md:pt-8 lg:pt-16 leading-0 w-[320px] md:w-[600px] lg:w-[600px]">
               <h1
                 className=" text-2xl lg:text-5xl  pt-5 lg:pb-5"
