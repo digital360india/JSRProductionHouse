@@ -267,7 +267,7 @@ const Rentals = () => {
               onChange={(e) => setEmail(e.target.value)}
               type="text"
               placeholder="Your Email"
-              className=" font2 border-2 p-4  text-sm h-16 lg:h-16  border-gray-900 lg:w-[560px] md:w-[450px] w-[300px]"
+              className=" font2 border-2 p-4  border-gray-900 text-sm h-16 lg:w-[560px] w-[300px]"
             />
             {/* <button className="bg-black w-[300px] md:w-[300px] lg:w-[560px] h-16 tracking-[6px] text-white text-xl hover:opacity-75 duration-200">
             Send

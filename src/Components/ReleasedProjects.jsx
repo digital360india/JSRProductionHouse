@@ -84,8 +84,8 @@ const ReleasedProjects = () => {
             ))
           : array.map((item, index) => {
               return (
-                <SwiperSlide key={index}>
-                  <Card data={item} />
+                <SwiperSlide key={index} className="">
+                  <Card data={item}/>
                 </SwiperSlide>
               );
             })}

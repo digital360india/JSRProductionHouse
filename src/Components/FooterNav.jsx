@@ -6,7 +6,7 @@ const FooterNav = () => {
     <>
       <div className=" md:flex md:flex-col px-5 md:px-[50px] lg:px-[100px] items-center justify-center  absolute w-[100%] h-72 md:h-52 flex opacity-95 bg-black pt-2 text-white">
         <div className="flex flex-col md:flex-row items-center lg:gap-32 xl:gap-96 ">
-          <div className="w-[100px] h-[50px] flex items-center justify-center lg:h-[80px] pb-8  lg:pb-0">
+          {/* <div className="w-[100px] h-[50px] flex items-center justify-center lg:h-[80px] pb-8  lg:pb-0">
             <Link to="/">
               <img
                 className="w-12 h-14"
@@ -14,7 +14,7 @@ const FooterNav = () => {
                 alt=""
               />
             </Link>
-          </div>
+          </div> */}
           <div>
             <ul className="flex flex-col md:flex-row justify-center items-center lg:text-lg tracking-[2px]  lg:w-[700px] xl:w-[900px] lg:tracking-[3px] gap-3 md:gap-12 lg:gap-14 xl:gap-16 lg:pl-16  text-white">
               <Link to="/">

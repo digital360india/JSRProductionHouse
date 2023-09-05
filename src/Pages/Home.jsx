@@ -11,7 +11,6 @@ import Footer from "../Components/Footer";
 import About from "../Components/About";
 import Gallery from "../Components/Gallery/Gallery";
 import Ventures from "../Components/Ventures";
-import { BsTwitter } from "react-icons/bs";
 
 const Home = () => {
   useEffect(() => {
@@ -19,7 +18,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="w-full h-full">
       {/* <div className="absolute h-52 w-32 flex-col"> */}
       <div className="fixed top-[320px] lg:top-[260px] right-0 h-72 w-10 items-center flex flex-col gap-10 justify-center bg-gray-200 opacity-70 z-50 rounded-tl-md rounded-bl-md    ">
         <a href="https://www.facebook.com/JSRProductionhouse" target="_blank">
@@ -65,14 +64,14 @@ const Home = () => {
           <UpcomingProjects />
           <ReleasedProjects />
           {/* <FutureProjects /> */}
-          <Gallery />
+          {/* <Gallery /> */}
           <Ventures />
           <OurChannel />
           <WorkWithUs />
         </ul>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

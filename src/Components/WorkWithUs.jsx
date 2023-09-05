@@ -122,7 +122,7 @@ const WorkWithUs = () => {
             onChange={(e) => setEmail(e.target.value)}
             type="text"
             placeholder="Your Email"
-            className=" font2 border-2 p-4  border-gray-900 text-sm h-16 lg:h-16 lg:w-[560px] md:w-[450px] w-[300px]"
+            className=" font2 border-2 p-4  border-gray-900 text-sm h-16 lg:w-[560px] w-[300px]"
           />
 
           <a

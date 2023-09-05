@@ -32,7 +32,7 @@ const Gallery = (props) => {
       </h1>
       <div className="bg-black -mt-7">
         <PhotoProvider>
-          <div className="gallery__div_container">
+          <div className="gallery__div_container overflow-auto w-screen">
             <div className="gallery__col">
               <div className="gallery__row1">
                 <PhotoView src={gallery?.img1}>

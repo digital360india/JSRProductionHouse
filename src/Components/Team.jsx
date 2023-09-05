@@ -4,8 +4,8 @@ const Team = () => {
   return (
     <div>
       <>
-        <div className="bg-black p-5 md:p-12 px-6 h-full w-[100%] text-white ">
-          <div className="flex flex-col-reverse lg:flex-row  pb-10 lg:pb-40">
+        <div className="bg-black p-5 md:p-12 px-6 h-full w-screen text-white ">
+          <div className="flex flex-col-reverse items-center  lg:mx-auto lg:w-[84vw] lg:justify-around lg:flex-row  pb-10 lg:pb-40">
             <div className="px-0 lg:pr-4 lg:pl-5 lg:leading-7 pt-5 md:pt-8 lg:pt-16 leading-0 w-[320px] md:w-[600px] lg:w-[600px]">
               <h1
                 className=" text-2xl lg:text-5xl  pt-5 lg:pb-5"
@@ -60,7 +60,7 @@ const Team = () => {
             BOARD OF DIRECTORS
           </div>
 
-          <div className="flex flex-col lg:flex-row pb-10 lg:pb-40 ">
+          <div className="flex flex-col items-center lg:flex-row pb-10 lg:pb-40 ">
             {/* <img
               src="https://cdn.discordapp.com/attachments/1078905801017659432/1099956366891831397/Tarun.png"
               alt=""
@@ -68,7 +68,7 @@ const Team = () => {
               data-aos="fade-up"
             /> */}
             <div className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] object-contain"></div>
-            <div className="px-0 lg:pl-16 lg:leading-7 float-right justify-start pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
+            <div className="md:mr-16 lg:ms-8 px-0 lg:pl-16 lg:leading-7 sm:ps-8 float-right justify-start pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
               <h1
                 className=" text-2xl lg:text-5xl pt-5 lg:pb-5"
                 data-aos="fade-up"
@@ -101,7 +101,7 @@ const Team = () => {
             </div>
           </div>
 
-          <div className="flex flex-col-reverse lg:flex-row  pb-10 lg:pb-40">
+          <div className="flex flex-col-reverse items-start lg:mx-auto lg:w-[84vw] lg:justify-around lg:flex-row  pb-10 lg:pb-40">
             <div className="px-0 lg:pr-4 lg:pl-5 lg:leading-7 pt-5 md:pt-8 lg:pt-16 leading-0 w-[320px] md:w-[600px] lg:w-[600px]">
               <h1
                 className=" text-2xl lg:text-5xl  pt-5 lg:pb-5"
@@ -155,7 +155,7 @@ const Team = () => {
               data-aos="fade-up"
             />
           </div>
-          <div className="flex flex-col lg:flex-row pt-5 lg:pb-40">
+          <div className="flex flex-col items-center sm:ps-14 lg:flex-row pt-5 lg:pb-40 md:mr-16">
             <img
               src="https://cdn.discordapp.com/attachments/1078905801017659432/1099956366673723402/Prashil.png"
               alt=""

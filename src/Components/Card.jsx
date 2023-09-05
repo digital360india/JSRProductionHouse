@@ -14,10 +14,10 @@ const Card = (data) => {
           />
         </a>
         {/* <div></div> */}
-        <p className="font2 pt-2 pb-4   lg:pt-2  self-center w-56 lg:w-60 xl:w-72 flex flex-col gap-2  ">
+        <p className="font2 pt-2 pb-4 md:ps-6  lg:pt-2  self-center w-56 lg:w-60 flex flex-col gap-2  ">
           <li className="font-bold text-lg  ">{data?.data?.title}</li>
-          <div className="flex  flex-col pt-2 text-base  justify-start items-start  w-96 h-24 ">
-            {data?.data?.producer && <li className=" text-center   ">
+          <div className="flex  flex-col pt-2 text-base  justify-start items-start text-left  w-80 h-24 ">
+            {data?.data?.producer && <li className="w-60 ">
               <span className="font-semibold">Producer : </span>
               {data?.data?.producer}
             </li>}
