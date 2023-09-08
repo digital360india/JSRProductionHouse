@@ -7,9 +7,12 @@ import Contact from "./Pages/Contact";
 import Rentals from "./Pages/Rentals";
 import Member from "./Pages/Member";
 import { useEffect } from "react";
+import ReactGA from "react-ga4";
 // import { AnimatePresence } from "framer-motion/dist/framer-motion";
 
 function App() {
+  ReactGA.initialize("6085778545");
+  ReactGA.send({ hitType: "pageview", page: window.location.pathname+window.location.search});
   async function updateviews(){
     try{
       const res=await axios.post("https://jsr-backend-x7rr.onrender.com/Views")
