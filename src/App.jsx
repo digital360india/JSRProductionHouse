@@ -9,10 +9,13 @@ import Member from "./Pages/Member";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
 // import { AnimatePresence } from "framer-motion/dist/framer-motion";
-
+ReactGA.initialize("G-V0L59CJ5VG");
 function App() {
-  ReactGA.initialize("G-V0L59CJ5VG");
-  ReactGA.send({ hitType: "pageview", page: window.location.pathname+window.location.search});
+  useEffect(()=>{
+    
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname+window.location.search});
+  },[])
+
   async function updateviews(){
     try{
       const res=await axios.post("https://jsr-backend-x7rr.onrender.com/Views")
