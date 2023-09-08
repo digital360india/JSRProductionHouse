@@ -11,10 +11,11 @@ import ReactGA from "react-ga4";
 // import { AnimatePresence } from "framer-motion/dist/framer-motion";
 ReactGA.initialize("G-V0L59CJ5VG");
 function App() {
+  const location = useLocation();
   useEffect(()=>{
     
     ReactGA.send({ hitType: "pageview", page: window.location.pathname+window.location.search});
-  },[])
+  },[location])
 
   async function updateviews(){
     try{
