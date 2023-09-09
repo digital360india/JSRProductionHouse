@@ -7,19 +7,13 @@ Aos.init({
 
 const Rental = () => {
   return (
-    <div>
-      <div className="bg-black p-5 md:p-12 px-6 h-full w-[100%] text-white ">
+    <>
+      {/* <div className="bg-black p-5 md:p-12 px-6 h-full w-[100%] text-white ">
         <h1 className="text-2xl lg:text-6xl text-center bg-black text-white pt-5 lg:pt-2 pb-8 lg:pb-20">
           Professional Cameras
         </h1>
 
         <div className="flex flex-col md:flex-row justify-center gap-6 lg:gap-20">
-          {/* <img
-            src="https://res.cloudinary.com/djb3n17c0/image/upload/v1693310137/IMG20230601130958_fhcudh.jpg"
-            alt=""
-            className="w-[320px] md:w-[600px] lg:w-[300px] lg:h-[320px] xl:w-[400px] xl:h-[420px]"
-            data-aos="fade-up"
-          /> */}
           <div className="text-xl lg:text-3xl text-center bg-black text-white pt-5 lg:pt-2 pb-8 lg:pb-20">
             <h1>ARRI</h1>
             <img
@@ -132,8 +126,11 @@ const Rental = () => {
          
          
         </div>
-      </div>
-    </div>
+      </div> */}
+      
+    
+    </>
+
   );
 };
 
