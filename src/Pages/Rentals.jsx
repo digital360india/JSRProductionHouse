@@ -17,6 +17,7 @@ import "../released.css";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 const Rentals = () => {
+  const [banner, setBanner] = useState({});
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
@@ -67,6 +68,18 @@ const Rentals = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     setSuccess(false);
     setWarning(false);
+  }, []);
+  async function get() {
+    try {
+      const { data } = await axios.get("https://jsr-backend-x7rr.onrender.com/Banner/rentals");
+      console.log(data[0]);
+      setBanner(data[0]);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  useEffect(() => {
+    get();
   }, []);
   return (
     <>
@@ -127,68 +140,15 @@ const Rentals = () => {
            showStatus={false}
            
            >
-                <div>
-                    <img src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png" className=" " />
-                </div>
-                <div>
-                    <img src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130582/TEAM_l5vyw0.png" className=" "  />
-                    
-                </div>
-                <div>
-                    <img src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691131047/EXTRA._gumksl.png" className=" "  />
-                    
-                </div>
+               {Array.isArray(banner?.img) &&
+            banner.img.map((value, index) => (
+          <div key={index}>
+            <img
+              src={value}
+              className=" "
+            /> </div>
+          ))}
             </Carousel>
-        {/* <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper hidden lg:flex "
-        >
-          <SwiperSlide>
-            <div className="flex  justify-center w-full">
-              <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png"
-                // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
-                alt=""
-                className="h-[400px] lg:h-[500px] w-full object-cover"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex  justify-center w-full">
-              <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png"
-                // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
-                alt=""
-                className="h-[400px] lg:h-[500px] w-full object-cover"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex  justify-center w-full">
-              <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png"
-                // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
-                alt=""
-                className="h-[400px] lg:h-[500px] w-full object-cover"
-              />
-            </div>
-          </SwiperSlide>
-        </Swiper> */}
-        {/* <img
-          src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130844/RENTALS_lnemlc.png"
-          alt=""
-          className="lg:hidden h-[400px] lg:h-[500px] w-full object-cover"
-        /> */}
       </div>
       <div className="bg-black  ">
         <ul className="flex flex-col  items-center w-full  px-4 lg:px-12 py-0 lg:py-20">
@@ -207,38 +167,6 @@ const Rentals = () => {
             <div className="w-[300px] lg:w-[450px] p-5 lg:pl-10 lg:p-2 text-center">
               FOR PRICE RELATED QUERIES LEAVE US A MESSAGE!
             </div>
-            {/* <div className="flex gap-8 w-60  pt-2 lg:pt-8">
-              <a
-                href="https://www.facebook.com/JSRProductionhouse"
-                target="_blank"
-              >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
-                  alt=""
-                  className="w-8 h-8 hover:scale-125 duration-200"
-                />
-              </a>
-              <a
-                href="https://www.instagram.com/jsrproductionhouse/?igshid=YmMyMTA2M2Y%3D"
-                target="_blank"
-              >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png"
-                  alt=""
-                  className="w-8 h-8 hover:scale-125  duration-200"
-                />
-              </a>
-              <a href="https://www.youtube.com/@jsrproductionhouse9127" target="_blank">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
-                  alt=""
-                  className="w-8 h-8 hover:scale-125  duration-200"
-                />
-              </a>
-              <a href="">
-                <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" />
-              </a>
-            </div> */}
           </div>
         </>
         <>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import Navbar from "../Components/Navbar";
 // import Service from "../Components/Service";
 import FooterNav from "../Components/FooterNav";
@@ -16,10 +16,24 @@ import "../released.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import axios from "axios";
 
 const Member = () => {
+  const [banner, setBanner] = useState({});
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+  async function get() {
+    try {
+      const { data } = await axios.get("https://jsr-backend-x7rr.onrender.com/Banner/members");
+      console.log(data[0]);
+      setBanner(data[0]);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  useEffect(() => {
+    get();
   }, []);
   return (
     <>
@@ -81,40 +95,24 @@ const Member = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper hidden lg:flex"
         >
+           {Array.isArray(banner?.img) &&
+            banner.img.map((value, index) => (
+              <>
           <SwiperSlide>
             <div className=" flex justify-center w-full">
               <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130582/TEAM_l5vyw0.png"
+                src={value}
                 // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
                 alt=""
                 className="h-[400px] lg:h-[500px] w-full object-cover"
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex  justify-center w-full">
-              <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130582/TEAM_l5vyw0.png"
-                // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
-                alt=""
-                className="h-[400px] lg:h-[500px] w-full object-cover"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex  justify-center w-full">
-              <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130582/TEAM_l5vyw0.png"
-                // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
-                alt=""
-                className="h-[400px] lg:h-[500px] w-full object-cover"
-              />
-            </div>
-          </SwiperSlide>
+          </> ))}
         </Swiper>
         <div className="flex lg:hidden justify-center w-full">
           <img
-            src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691130582/TEAM_l5vyw0.png"
+            src={banner?.img[0]}
             // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
             alt=""
             className="h-[400px] lg:h-[500px] w-full object-cover"

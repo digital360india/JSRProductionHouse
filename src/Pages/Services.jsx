@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import Service from "../Components/Service";
 import Navbar from "../Components/Navbar";
 import FooterNav from "../Components/FooterNav";
 import { BsTwitter } from "react-icons/bs";
-
+import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -17,8 +17,21 @@ import "../released.css";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Services = () => {
+  const [banner, setBanner] = useState({});
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+  async function get() {
+    try {
+      const { data } = await axios.get("https://jsr-backend-x7rr.onrender.com/Banner/services");
+      console.log(data[0]);
+      setBanner(data[0]);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  useEffect(() => {
+    get();
   }, []);
 
   return (
@@ -80,36 +93,19 @@ const Services = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper hidden lg:flex"
         >
-          <SwiperSlide>
+           {Array.isArray(banner?.img) &&
+            banner.img.map((value, index) => (
+          <SwiperSlide key={index}>
             <div className="flex  justify-center w-full">
               <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691131047/EXTRA._gumksl.png"
+                src={value}
                 // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
                 alt=""
                 className="h-[400px] lg:h-[500px] w-full object-cover"
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex  justify-center w-full">
-              <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691131047/EXTRA._gumksl.png"
-                // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
-                alt=""
-                className="h-[400px] lg:h-[500px] w-full object-cover"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex  justify-center w-full">
-              <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691131047/EXTRA._gumksl.png"
-                // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
-                alt=""
-                className="h-[400px] lg:h-[500px] w-full object-cover"
-              />
-            </div>
-          </SwiperSlide>
+          ))}
         </Swiper>
         <img
           src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691131047/EXTRA._gumksl.png"
