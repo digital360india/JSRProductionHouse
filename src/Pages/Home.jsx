@@ -11,6 +11,7 @@ import Footer from "../Components/Footer";
 import About from "../Components/About";
 import Gallery from "../Components/Gallery/Gallery";
 import Ventures from "../Components/Ventures";
+import Gallery2 from "../Components/Gallery/Gallery2";
 
 const Home = () => {
   useEffect(() => {
@@ -64,13 +65,15 @@ const Home = () => {
           <UpcomingProjects />
           <ReleasedProjects />
           {/* <FutureProjects /> */}
-          <Gallery />
+          {/* <Gallery /> */}
+          <Gallery2 />
           <Ventures />
           <OurChannel />
           <WorkWithUs />
         </ul>
       </div>
       <Footer />
+      {/* <Gallery2 /> */}
     </div>
   );
 };

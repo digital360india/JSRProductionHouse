@@ -3,7 +3,7 @@ import React from "react";
 const Ventures = () => {
   return (
     <>
-      <h1 className="text-5xl md:text-5xl lg:text-7xl  tracking-[2px]  lg:tracking-[6px] pt-5 lg:pt-20">
+      <h1 className="text-5xl md:text-5xl lg:text-7xl  tracking-[2px]  lg:tracking-[6px] pt-5 lg:pt-10">
         Our Ventures
       </h1>
       {/* <p className="font2  py-2 lg:py-8 w-[320px] md:w-[550px] lg:w-[800px] lg:text-[14px] tracking-wide leading-7 text-gray-600 text-center ">
