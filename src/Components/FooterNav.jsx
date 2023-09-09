@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const FooterNav = () => {
   return (
     <>
-      <div className=" md:flex md:flex-col px-5 md:px-[50px] lg:px-[100px] items-center justify-center  absolute w-[100%] h-72 md:h-52 flex opacity-95 bg-black pt-2 text-white">
+      <div className=" md:flex md:flex-col px-5 md:px-[50px] lg:px-[100px] items-center justify-center  absolute w-[100%] h-1/4 flex opacity-95 bg-black pt-2 text-white">
         <div className="flex flex-col md:flex-row items-center lg:gap-32 xl:gap-96 ">
           {/* <div className="w-[100px] h-[50px] flex items-center justify-center lg:h-[80px] pb-8  lg:pb-0">
             <Link to="/">
