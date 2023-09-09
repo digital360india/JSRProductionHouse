@@ -9,7 +9,7 @@ import Member from "./Pages/Member";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
 // import { AnimatePresence } from "framer-motion/dist/framer-motion";
-ReactGA.initialize("G-V0L59CJ5VG");
+ReactGA.initialize("G-JLSFTBB8D2");
 function App() {
   const location = useLocation();
   useEffect(()=>{
