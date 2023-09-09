@@ -228,7 +228,7 @@ const Rentals = () => {
           </div>
         </>
       </div>
-      <FooterNav className="flex"/>
+      <FooterNav className="flex flex-grow-0"/>
     </>
   );
 };
