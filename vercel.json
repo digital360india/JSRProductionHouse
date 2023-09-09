@@ -1,8 +1,10 @@
 {
     "routes": [
-      { "src": "/(js|css|img)/(.*)", "dest": "/$1/$2" },
-      { "src": "/(.*).json", "dest": "/$1.json" },
-      { "src": "/.*", "dest": "/index.html" }
+      { "handle": "filesystem" },
+      {
+        "src": "/.*",
+        "dest": "/index.html"
+      }
     ]
   }
   
