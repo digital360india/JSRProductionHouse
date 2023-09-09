@@ -25,7 +25,7 @@ useEffect(()=>{
 },[])
   return (
     <>
-      <div className="bg-black p-5 md:p-12 px-6 pt-5 h-full w-[100%] text-white ">
+      <div className="bg-black p-5 text-justify md:p-12 px-6 pt-5 h-full w-[100%] text-white ">
         <div
           className="flex flex-col items-center lg:flex-row pb-10 lg:pb-40"
           data-aos="fade-up"

@@ -27,6 +27,7 @@ const Member = () => {
     try {
       const { data } = await axios.get("https://jsr-backend-x7rr.onrender.com/Banner/members");
       console.log(data[0]);
+     console.log(data);
       setBanner(data[0]);
     } catch (e) {
       console.log(e);
@@ -97,8 +98,8 @@ const Member = () => {
         >
            {Array.isArray(banner?.img) &&
             banner.img.map((value, index) => (
-              <>
-          <SwiperSlide>
+              
+          <SwiperSlide key={"members"+index}>
             <div className=" flex justify-center w-full">
               <img
                 src={value}
@@ -108,15 +109,15 @@ const Member = () => {
               />
             </div>
           </SwiperSlide>
-          </> ))}
+          ))}
         </Swiper>
         <div className="flex lg:hidden justify-center w-full">
-          <img
-            src={banner?.img[0]}
-            // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
-            alt=""
+         
+
+{banner?.img && banner.img.length > 0 && (
+  <img src={banner.img[0]} alt="Banner Image" 
             className="h-[400px] lg:h-[500px] w-full object-cover"
-          />
+          />)}
         </div>
       </div>
       {/* <div className="text-2xl lg:text-6xl text-center bg-black text-white pt-10">
