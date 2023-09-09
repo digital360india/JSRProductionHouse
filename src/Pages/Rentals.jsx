@@ -72,8 +72,8 @@ const Rentals = () => {
   async function get() {
     try {
       const { data } = await axios.get("https://jsr-backend-x7rr.onrender.com/Banner/rentals");
-      console.log(data[0]);
-      setBanner(data[0]);
+      console.log(data);
+      setBanner(data.img);
     } catch (e) {
       console.log(e);
     }
@@ -140,14 +140,12 @@ const Rentals = () => {
            showStatus={false}
            
            >
-               {Array.isArray(banner?.img) &&
-            banner.img.map((value, index) => (
-          <div key={index}>
+               
+          <div>
             <img
-              src={value}
+              src={banner}
               className=" "
             /> </div>
-          ))}
             </Carousel>
       </div>
       <div className="bg-black  ">
