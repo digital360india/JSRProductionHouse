@@ -96,7 +96,7 @@ useEffect(()=>{
           />
         </div>
       </div>
-      <div className="bg-black p-5 md:p-12 px-6 h-full w-[100%] text-white ">
+      <div className="bg-black text-justify p-5 md:p-12 px-6 h-full w-[100%] text-white ">
         <div className="flex flex-col items-center lg:flex-row pb-10 lg:pb-40">
           <img
             src={a[2]?.img}
@@ -165,7 +165,7 @@ useEffect(()=>{
           />
         </div>
       </div>
-      <div className="bg-black p-5 md:p-12 px-6 h-full w-[100%] text-white ">
+      <div className="bg-black text-justify p-5 md:p-12 px-6 h-full w-[100%] text-white ">
         <div className="flex flex-col items-center lg:flex-row pb-10 lg:pb-40">
           <img
             src={a[4]?.img}
