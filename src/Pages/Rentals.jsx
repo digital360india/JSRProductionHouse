@@ -2,20 +2,19 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import FooterNav from "../Components/FooterNav";
 import Rental from "../Components/Rental";
-import { BsTwitter } from "react-icons/bs";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import axios from "axios";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
 
 import "../released.css";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
+// import { Autoplay, Pagination, Navigation } from "swiper";
 const Rentals = () => {
   const [banner, setBanner] = useState({});
   const [message, setMessage] = useState("");
@@ -150,9 +149,9 @@ const Rentals = () => {
       </div>
       <div className="bg-black  ">
         <ul className="flex flex-col  items-center w-full  px-4 lg:px-12 py-0 lg:py-20">
-          <li className=" lg:border-l-[2px] border-gray-100 opacity-10 h-[350%] absolute z-1  left-4 lg:left-20"></li>
+          <li className=" lg:border-l-[2px] border-gray-100 opacity-10 h-full absolute z-1  left-4 lg:left-20"></li>
           {/* <li className="lg:border-l-[2px] border-gray-100 opacity-10 left-[50%] h-[350%] absolute z-1"></li> */}
-          <li className="lg:border-l-[2px] border-gray-100 opacity-10 h-[350%] absolute z-1 right-4 lg:right-20"></li>
+          <li className="lg:border-l-[2px] border-gray-100 opacity-10 h-full absolute z-1 right-4 lg:right-20"></li>
           <Rental />
         </ul>
       </div>
