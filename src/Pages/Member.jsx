@@ -110,10 +110,10 @@ const Member = () => {
         <div className="flex lg:hidden justify-center w-full">
          
 
-{banner?.img && banner.img.length > 0 && (
-  <img src={banner.img[0]} alt="Banner Image" 
+
+  <img src={banner} alt="Banner Image" 
             className="h-[400px] lg:h-[500px] w-full object-cover"
-          />)}
+          />
         </div>
       </div>
       {/* <div className="text-2xl lg:text-6xl text-center bg-black text-white pt-10">
