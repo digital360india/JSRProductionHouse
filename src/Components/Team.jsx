@@ -60,7 +60,7 @@ const Team = () => {
             BOARD OF DIRECTORS
           </div>
 
-          <div className="flex flex-col items-center lg:flex-row pb-10 lg:pb-40 ">
+          <div className="flex flex-col justify-around items-center lg:flex-row pb-10 lg:pb-40 ">
             {/* <img
               src="https://cdn.discordapp.com/attachments/1078905801017659432/1099956366891831397/Tarun.png"
               alt=""
@@ -155,7 +155,7 @@ const Team = () => {
               data-aos="fade-up"
             />
           </div>
-          <div className="flex flex-col items-center sm:ps-14 lg:flex-row pt-5 lg:pb-40 md:mr-16">
+          <div className="flex flex-col justify-around items-center sm:ps-14 lg:flex-row pt-5 lg:pb-40 md:mr-16">
             <img
               src="https://cdn.discordapp.com/attachments/1078905801017659432/1099956366673723402/Prashil.png"
               alt=""

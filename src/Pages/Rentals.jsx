@@ -125,27 +125,16 @@ const Rentals = () => {
             </h1>
           </div>
         </div>
-           <Carousel 
+         
           
-           showThumbs={false}
-           showArrows={false}
-           showIndicators={false}
-           infiniteLoop={true}
-           autoPlay={true}
-           stopOnHover={false}
-           interval={4000}
-           transitionTime={2000}
-           animationHandler="fade"
-           showStatus={false}
-           
-           >
+
                
           <div>
             <img
               src={banner}
-              className=" "
+              className=" w-full "
             /> </div>
-            </Carousel>
+       
       </div>
       <div className="bg-black  ">
         <ul className="flex flex-col  items-center w-full  px-4 lg:px-12 py-0 lg:py-20">
