@@ -75,7 +75,7 @@ const Member = () => {
             bar={"text-white"}
           />
           <div className="flex justify-center items-center">
-            <h1 className="text-7xl text-white tracking-wider absolute top-44 lg:top-52">
+            <h1 className="text-4xl lg:text-7xl text-white tracking-wider absolute top-44 lg:top-44 xl:top-48 2xl:top-80">
               TEAM
             </h1>
           </div>

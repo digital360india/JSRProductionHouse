@@ -120,7 +120,7 @@ const Rentals = () => {
             bar={"text-white"}
           />
           <div className="flex justify-center items-center">
-            <h1 className=" text-4xl  md:text-7xl text-white tracking-wider  absolute sm:top-32 md:top-44 lg:top-48">
+            <h1 className=" text-4xl lg:text-7xl text-white tracking-wider absolute top-44 lg:top-44 xl:top-48 2xl:top-80">
               RENTALS
             </h1>
           </div>
@@ -132,7 +132,7 @@ const Rentals = () => {
           <div>
             <img
               src={banner}
-              className=" w-full "
+              className="w-full"
             /> </div>
        
       </div>
