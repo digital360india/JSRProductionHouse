@@ -65,8 +65,8 @@ const Home = () => {
           <UpcomingProjects />
           <ReleasedProjects />
           {/* <FutureProjects /> */}
-          {/* <Gallery /> */}
-          <Gallery2 />
+          <Gallery />
+          {/* <Gallery2 /> */}
           <Ventures />
           <OurChannel />
           <WorkWithUs />
