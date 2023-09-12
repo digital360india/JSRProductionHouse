@@ -47,8 +47,8 @@ const Gallery = (props) => {
               </div>
               <div className="">
               
-                  <PhotoView src={gallery?.img5}>
-                    <img src={gallery?.img5} className=" trans h-[100%] w-[400px]  rounded-md border-2 border-white  " alt="img5"></img>
+                  <PhotoView src={gallery?.img8}>
+                    <img src={gallery?.img8} className=" trans h-[100%] w-[400px]  rounded-md border-2 border-white  " alt="img5"></img>
                   </PhotoView>
                 
               </div>
@@ -105,8 +105,8 @@ const Gallery = (props) => {
               </div>
               <div className="">
                 
-                  <PhotoView src={gallery?.img8}>
-                    <img src={gallery?.img8} className=" trans h-[100%] w-[200px] rounded-md    border-2 border-white  " alt="img13"></img>
+                  <PhotoView src={gallery?.img5}>
+                    <img src={gallery?.img5} className=" trans h-[100%] w-[200px] rounded-md    border-2 border-white  " alt="img13"></img>
                   </PhotoView>
                 
               </div>
