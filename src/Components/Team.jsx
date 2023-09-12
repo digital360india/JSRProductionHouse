@@ -157,7 +157,7 @@ const Team = () => {
           </div>
           <div className="flex flex-col justify-around items-center sm:ps-14 lg:flex-row pt-5 lg:pb-40 md:mr-16">
             <img
-              src="https://cdn.discordapp.com/attachments/1078905801017659432/1099956366673723402/Prashil.png"
+              src="https://res.cloudinary.com/djb3n17c0/image/upload/v1694518987/rcgq3cppefzbiq5vhhfe.jpg"
               alt=""
               className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] object-contain"
               data-aos="fade-up"
