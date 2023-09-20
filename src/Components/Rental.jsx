@@ -127,58 +127,79 @@ const Rental = () => {
          
         </div>
       </div> */}
-      
-       
+
       <div className="bg-black p-5 md:p-12 px-6 h-full w-[100%] text-white ">
         {/* <h1 className="text-2xl lg:text-6xl text-start bg-black text-white pt-5 lg:pt-2 pb-8 lg:pb-20">
           Professional Cameras
         </h1> */}
         <h3 className="text-xl lg:text-4xl text-start bg-black text-white pt-5 lg:pt-2 pb-6 lg:pb-6">
-          Arri Cameras
+          Professional cinema cameras, equipments and lenses
         </h3>
         <p className="font2 opacity-60 pb-10">
-        ARRI cameras are renowned for their image quality, dynamic range, and color science, making them a top choice for many cinematographers and filmmakers in the industry. These cameras are often used in feature films, television shows, commercials, and other high-end productions where image quality is paramount. Additionally, ARRI provides a wide range of accessories and support services to complement their camera systems.
+          At JSR, we take immense pride in providing top-tier equipment to fuel
+          your creative journey. Unleash your creativity with cutting-edge
+          technology. Our lineup boasts the latest in camera technology,
+          ensuring that you have the tools you need to capture exactly what you
+          desire. At JSR, we offer professional cameras from renowned brands
+          like Arri, Red, Sony FX and Venice series, Canon, and Lumix. These
+          cameras are tailored to meet your demands for excellence. In addition
+          to cameras, we provide a variety of high-quality lenses, including
+          Ultra Prime, Master Prime, Supreme Prime, Signature Prime, Cooke S4i
+          and S7i, Pancro Classic, Xeen Prime, CP2, CP3 high-speed lenses, Sigma
+          lenses, and many others.
         </p>
         <h3 className="text-xl lg:text-4xl text-start bg-black text-white pt-5 lg:pt-2 pb-6 lg:pb-6">
-         SONY CAMERAS
+          Professional lighting system and gears
         </h3>
         <p className="font2 opacity-60 pb-10">
-        A professional cinema camera designed for filmmakers and content creators. Has gained popularity for its combination of compact design, versatility, and high-quality video capabilities.Some key features and specifications of the Sony   professional camera are full-frame 10.2-megapixel Exmor R CMOS sensor, which is known for its low-light performance and dynamic range.Video Resolutions: It can record video in various resolutions, including DCI 4K (4096 x 2160) and UHD 4K (3840 x 2160), at frame rates up to 120 frames per second (fps). It also supports HD recording at up to 240 fps.an impressive ISO range of 800 to 12,800, expandable to 80-409,600, making it suitable for low-light shooting. electronic image stabilization (Active Mode) to help smooth out handheld shots. The camera uses the Sony E-mount, which is compatible with a wide range of Sony and third-party lenses.
+          We understand that lighting is a fundamental element in the art of
+          filmmaking and can make or break the visual quality of a film. That's
+          why we offer a comprehensive range of lighting equipment, along with a
+          team of experienced lighting technicians who are dedicated to crafting
+          the perfect ambiance for your project. Our production house provides
+          filmmakers with top-notch professional lighting solutions, including
+          systems from Arri, Film Gear, Godox, and Aputure. Our offerings range
+          from PAR lighting and SkyPanels to small RGB kits and much more.
         </p>
 
         <h3 className="text-xl lg:text-4xl text-start bg-black text-white pt-5 lg:pt-2 pb-6 lg:pb-6">
-        Nova Apurture Light
+          Renting The Studio
         </h3>
         <p className="font2 opacity-60 pb-10">
-        The Nova P300c is a 300W RGBWW LED Soft Light, and is also the first product in Aputure “Nova” Professional LED Panel product line. The P300c utilizes warm white and cool white LEDs, in addition to the typical RGB chipset used in color-mixing lights. This chipset increases its output, skin tone accuracy, and tonal variety compared to other RGB or RGBW LED fixtures, making it suited for any filmmaking environment. Combining the stellar color quality with an intense output of over 9,000lux at 1 meter, a CCT range of 2,000K-10,000K, and a peak tungsten SSI of 85, the Nova is Aputure’s most versatile light to date.
+          Are you in search of the perfect studio space for your creative
+          endeavors? Look no further! JSR Production House is your one-stop
+          solution. We offer professional color grading setups, VFX, Unreal
+          Engine-based virtual production setups with anti-latency sensors and
+          virtual walls, as well as music production setups. Our equipment range
+          includes Pro Tools, Universal Audio, DaVinci Resolve, BaseLight, and
+          other professional software and equipment.
         </p>
         <h3 className="text-xl lg:text-4xl text-start bg-black text-white pt-5 lg:pt-2 pb-6 lg:pb-6">
-       ARRI SKYPANEL
+          Transport & logistics
         </h3>
         <p className="font2 opacity-60 pb-10">
-        The ARRI SkyPanel is a popular and versatile LED soft light fixture used in the film and television industry for professional lighting applications. It is manufactured by ARRI, a renowned German company known for its high-quality film and lighting equipment. The SkyPanel is designed to provide a wide range of color temperature options, precise color control, and soft, even lighting.
+          At JSR Production House, we understand that seamless logistics are
+          vital for successful production. That's why we specialize in providing
+          transportation solutions for every aspect of your creative project.
+          Whether you need to move equipment or your team, we've got you
+          covered. Our fleet includes a range of vehicles, from luxury options
+          like sports cars and limousines to commercial choices such as SUVs,
+          MUVs, vanity vans, production pickup trucks, buses, taxis, and
+          generators.
         </p>
 
         <h3 className="text-xl lg:text-4xl text-start bg-black text-white pt-5 lg:pt-2 pb-6 lg:pb-6">
-       GODOX
+          Location & Accomodation
         </h3>
         <p className="font2 opacity-60 pb-10">
-        GODOX is a well-known brand in the photography and lighting industry, and they produce a wide range of photography and lighting equipment, including LED lights. LED lights by GODOX are popular among photographers and videographers for their versatility, quality.GODOX also offers LED lights with RGB (Red, Green, Blue) color capabilities. These lights can produce a wide range of colors, making them great for creative lighting effects, color gels, or creating dynamic and colorful backgrounds.
+          At JSR Production House, we understand that comfortable and convenient
+          accommodations are essential for the success of any production. That's
+          why we specialize in providing top-notch lodging options for you. From
+          prime locations to hotels, resorts, clubs, pubs, and cafes, we offer a
+          comprehensive range of options, all available under one roof.
         </p>
-
-
-        </div>
-
-
-
-
-
-
-
-
-
+      </div>
     </>
-
   );
 };
 
