@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import axios from "axios";
 Aos.init({
   duration: 1200,
 });
 
 const Rental = () => {
+  const [rentals, setRentals] = useState([]);
+
+  async function get() {
+    try {
+      const { data } = await axios.get(
+        "https://jsr-backend-x7rr.onrender.com/Rentals"
+      );
+      // console.log("data[0]",data[0]);
+      setRentals(data);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  useEffect(() => {
+    get();
+  }, []);
   return (
     <>
       {/* <div className="bg-black p-5 md:p-12 px-6 h-full w-[100%] text-white ">
@@ -132,7 +149,20 @@ const Rental = () => {
         {/* <h1 className="text-2xl lg:text-6xl text-start bg-black text-white pt-5 lg:pt-2 pb-8 lg:pb-20">
           Professional Cameras
         </h1> */}
-        <h3 className="text-xl lg:text-4xl text-start bg-black text-white pt-5 lg:pt-2 pb-6 lg:pb-6">
+        {rentals.map((item, index) => {
+          return (
+            <>
+              <h3
+                key={index}
+                className="text-xl lg:text-4xl text-start bg-black text-white pt-5 lg:pt-2 pb-6 lg:pb-6"
+              >
+                {item?.heading}
+              </h3>
+              <p className="font2 opacity-40 pb-10">{item?.content}</p>
+            </>
+          );
+        })}
+        {/* <h3 className="text-xl lg:text-4xl text-start bg-black text-white pt-5 lg:pt-2 pb-6 lg:pb-6">
           Professional cinema cameras, equipments and lenses
         </h3>
         <p className="font2 opacity-60 pb-10">
@@ -197,7 +227,7 @@ const Rental = () => {
           why we specialize in providing top-notch lodging options for you. From
           prime locations to hotels, resorts, clubs, pubs, and cafes, we offer a
           comprehensive range of options, all available under one roof.
-        </p>
+        </p> */}
       </div>
     </>
   );
