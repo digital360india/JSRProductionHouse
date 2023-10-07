@@ -18,7 +18,7 @@ const WorkWithUs = ({message1}) => {
     if (message == "" || name == "" || whatsapp == "" || email == "") {
       setWarning(true);
     } else {
-      emailjs.sendForm('service_kapjbdg', 'template_2wzg0vp', form.current, 'TKdj7nxdMOVWkUgJO')
+      emailjs.sendForm('service_0aa48bf', 'template_ychply3', form.current, 'QAm1-pFic6dejz0sh')
       .then((result) => {
           console.log(result.text);
           setSuccess(true);
