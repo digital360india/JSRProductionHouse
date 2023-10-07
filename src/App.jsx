@@ -2,6 +2,7 @@ import Home from "./Pages/Home";
 import axios from 'axios'
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Services from "./Pages/Services";
+
 // import OurTeam from "./Pages/OurTeam";
 import Contact from "./Pages/Contact";
 import Rentals from "./Pages/Rentals";
