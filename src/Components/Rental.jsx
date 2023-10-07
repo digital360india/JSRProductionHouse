@@ -12,7 +12,7 @@ const Rental = () => {
   async function get() {
     try {
       const { data } = await axios.get(
-        "https://jsr-backend-x7rr.onrender.com/Rentals"
+        "https://jsr-backend-p4sz.onrender.com/Rentals"
       );
       // console.log("data[0]",data[0]);
       setRentals(data);

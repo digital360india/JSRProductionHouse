@@ -17,7 +17,7 @@ const Gallery2 = () => {
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          "https://jsr-backend-x7rr.onrender.com/Gallery"
+          "https://jsr-backend-p4sz.onrender.com/Gallery"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch.");

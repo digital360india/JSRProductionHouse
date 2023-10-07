@@ -5,7 +5,7 @@ const Team = () => {
   const [bods, setBods] = useState([]);
   async function get() {
     try {
-      const { data } = await axios.get("https://jsr-backend-x7rr.onrender.com/Bod");
+      const { data } = await axios.get("https://jsr-backend-p4sz.onrender.com/Bod");
       setBods(data);
     } catch (e) {
       console.log(e);

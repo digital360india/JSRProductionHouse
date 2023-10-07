@@ -27,7 +27,7 @@ const Rentals = () => {
 
   const postMessage = async () => {
     try {
-      const apiURL = "https://jsr-backend-x7rr.onrender.com/Query/";
+      const apiURL = "https://jsr-backend-p4sz.onrender.com/Query/";
 
       const postData = {
         message,
@@ -71,7 +71,7 @@ const Rentals = () => {
   }, []);
   async function get() {
     try {
-      const { data } = await axios.get("https://jsr-backend-x7rr.onrender.com/Banner/rentals");
+      const { data } = await axios.get("https://jsr-backend-p4sz.onrender.com/Banner/rentals");
       console.log(data);
       setBanner(data.img);
     } catch (e) {

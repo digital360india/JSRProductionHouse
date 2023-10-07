@@ -5,7 +5,7 @@ const OurChannel = () => {
   async function get() {
     try {
       const { data } = await axios.get(
-        "https://jsr-backend-x7rr.onrender.com/OurChannel"
+        "https://jsr-backend-p4sz.onrender.com/OurChannel"
       );
       console.log(data.para);
       setPara(data.para);

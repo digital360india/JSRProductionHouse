@@ -6,7 +6,7 @@ const About = () => {
   async function getabout()
  {
   try{
-  const {data}=await axios.get("https://jsr-backend-x7rr.onrender.com/AParagraph")
+  const {data}=await axios.get("https://jsr-backend-p4sz.onrender.com/AParagraph")
   console.log(data[0].line);
   setPara(data[0].line);
   }

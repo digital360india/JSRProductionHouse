@@ -15,7 +15,7 @@ const Hero = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await fetch(
-        "https://jsr-backend-x7rr.onrender.com/Video"
+        "https://jsr-backend-p4sz.onrender.com/Video"
       );
       const data = await response.json();
       setArray(data);

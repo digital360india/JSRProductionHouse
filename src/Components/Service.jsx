@@ -12,7 +12,7 @@ const Service = () => {
   {
       try{
 
-          const {data}=await axios.get("https://jsr-backend-x7rr.onrender.com/Service")
+          const {data}=await axios.get("https://jsr-backend-p4sz.onrender.com/Service")
           setA(data);
       }
       catch(e)
