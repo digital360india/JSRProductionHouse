@@ -2,7 +2,6 @@ import Home from "./Pages/Home";
 import axios from 'axios'
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Services from "./Pages/Services";
-
 // import OurTeam from "./Pages/OurTeam";
 import Contact from "./Pages/Contact";
 import Rentals from "./Pages/Rentals";
@@ -18,16 +17,6 @@ function App() {
     ReactGA.send({ hitType: "pageview", page: window.location.pathname+window.location.search});
   },[location])
 
-  async function updateviews(){
-    try{
-      const res=await axios.post("https://jsr-backend-p4sz.onrender.com/Views")
-      console.log(res) }
-          catch(e)
-          {console.log(e)    }
-  }
-  useEffect(()=>{
-    updateviews()
-  },[])
 
   return (
     <>

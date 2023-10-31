@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Cloudinary } from '@cloudinary/url-gen';
+import { AdvancedVideo } from '@cloudinary/react';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -7,10 +8,11 @@ import "swiper/css/navigation";
 import { useEffect, useState } from "react";
 import "../released.css";
 
-// import required modules
+
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Hero = () => {
+  const cld = new Cloudinary({ cloud: { cloudName: 'dsea9eyps' } });
   const [array, setArray] = useState([]);
   useEffect(() => {
     const fetchProducts = async () => {
@@ -18,6 +20,7 @@ const Hero = () => {
         "https://jsr-backend-p4sz.onrender.com/Video"
       );
       const data = await response.json();
+      console.log(data);
       setArray(data);
     };
     fetchProducts();
@@ -42,19 +45,18 @@ const Hero = () => {
       array.map((item, index)=>{
         return(
       <SwiperSlide>
-        <div className="flex justify-center w-full">
-          <video
-            className="w-screen -mt-16 md:mt-8  h-[300px] lg:h-[800px] lg:-mt-40"
-            src={item?.link}
-            alt={index.toString()}
-            autoPlay
-            loop
-            muted
-          />
-        </div>
+        <AdvancedVideo
+  controls={false}
+  className=" -mt-48  -mb-40 sm:mb-0 sm:mt-0 sm:object-cover w-screen h-[70vh]"
+  autoPlay
+  muted
+  loop
+  cldVid={cld.video('ji6qdcwev4ptfvxdzhkl').quality('auto')}
+/>
       </SwiperSlide>
         )
-      })}
+      }
+      )}
      
     </Swiper>
     </>
