@@ -50,7 +50,7 @@ const Hero = () => {
   className="object-cover w-screen h-[70vh]"
   autoPlay
   muted
-  cldVid={cld.video('ji6qdcwev4ptfvxdzhkl')}
+  cldVid={cld.video('ji6qdcwev4ptfvxdzhkl').quality('auto')}
 />
       </SwiperSlide>
         )
