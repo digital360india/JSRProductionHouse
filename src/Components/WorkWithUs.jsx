@@ -1,5 +1,7 @@
 import React, { useEffect, useState,useRef  } from "react";
 import emailjs from '@emailjs/browser';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 import { BsTwitter } from "react-icons/bs";
 import axios from "axios";
 import { Warning } from "postcss";
@@ -14,12 +16,15 @@ const WorkWithUs = ({message1}) => {
   const [warning, setWarning] = useState(false);
 
   const handleSubmit = (e) => {
+    
     e.preventDefault();
-    if (message == "" || name == "" || whatsapp == "" || email == "") {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i; 
+  const mobileNumberRegex = /^\d{10}$/;
+  if ( message.trim().length<5 || name.trim().length < 3 || !mobileNumberRegex.test(whatsapp) || !emailRegex.test(email)) {
       setWarning(true);
     } else {
       emailjs.sendForm('service_0aa48bf', 'template_ychply3', form.current, 'QAm1-pFic6dejz0sh')
-      .then((result) => {
+      .then((result) => {  
           console.log(result.text);
           setSuccess(true);
       }, (error) => {
@@ -101,7 +106,23 @@ const WorkWithUs = ({message1}) => {
           )}
           {success && (
             <div className="text-green-700 text-sm font2 tracking-normal">
-              *Form Submitted Successfully
+               <Popup  
+               open={success}
+               closeOnEscape={false}
+               closeOnDocumentClick={false}
+ contentStyle={{
+  display:"flex",
+  justifyContent:"center",
+  alignItems:"center"
+ }}
+               >
+                <div className=" text-2xl text-green-500 p-3 flex flex-col  items-center ">
+                <p>"Thank you for submitting your queries</p>
+                 <p>Our officials will get back to you soon.."</p>
+               <button onClick={()=>setSuccess(false)} className="  mt-2 bg-black text-white p-1 w-10 ">Ok</button>
+                </div>
+    
+  </Popup>
             </div>
           )}
         </div>
