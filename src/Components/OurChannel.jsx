@@ -34,8 +34,9 @@ const OurChannel = () => {
               target="_blank"
             >
               <img
-                // src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737148/samples/a9netvmy3epwecuknnpq.png"
-                src={new CloudinaryImage("https://res.cloudinary.com/dsea9eyps/image/upload/v1698737148/samples/a9netvmy3epwecuknnpq.png").delivery(quality(auto()))}
+                src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737148/samples/a9netvmy3epwecuknnpq.png"
+                // src={new CloudinaryImage("https://res.cloudinary.com/dsea9eyps/image/upload/v1698737148/samples/a9netvmy3epwecuknnpq.png").delivery(quality(auto()))}
+
                 alt="JSR Production House"
                 className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
               />
