@@ -26,7 +26,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
             <Link to="/">
               <img
                 className="w-10 h-12"
-                src="https://cdn.discordapp.com/attachments/1078905801017659432/1099960093216354415/JSR_logo.png"
+                src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737148/samples/a9netvmy3epwecuknnpq.png"
                 alt=""
               />
             </Link>
@@ -82,7 +82,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
             <Link to="/">
               <img
                 className="w-12 h-14"
-                src="https://cdn.discordapp.com/attachments/1078905801017659432/1099960093216354415/JSR_logo.png"
+                src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737148/samples/a9netvmy3epwecuknnpq.png"
                 alt=""
               />
             </Link>
@@ -139,7 +139,7 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
               </div>
               <div className="flex flex-col items-center gap-5 justify-center">
                 <img
-                  src="https://cdn.discordapp.com/attachments/1078905801017659432/1099960093216354415/JSR_logo.png"
+                  src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737148/samples/a9netvmy3epwecuknnpq.png"
                   alt=""
                   className="w-16"
                 />

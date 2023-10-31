@@ -17,7 +17,7 @@ const Ventures = () => {
               target="_blank"
             >
               <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1693309346/VHS-MEDIA-LLP_fzc9xn.png  "
+                src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737496/samples/ixoleqe9lfa47ciek9kr.png"
                 alt="JSR Record Label"
                 className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
               />
@@ -27,7 +27,7 @@ const Ventures = () => {
           <div className="hover:scale-125 duration-200">
             <a href="https://instagram.com/jsrrecordlabel?igshid=MzRlODBiNWFlZA==" target="_blank">
               <img
-                src="http://res.cloudinary.com/djb3n17c0/image/upload/v1691128688/RECORD-LABEL_gaq31x.png "
+                src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737408/samples/jydv1y0pssxb035vm8dt.png"
                 alt="JSR Record Label"
                 className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
               />
