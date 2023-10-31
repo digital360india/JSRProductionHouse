@@ -47,9 +47,10 @@ const Hero = () => {
       <SwiperSlide>
         <AdvancedVideo
   controls={false}
-  className="object-cover w-screen h-[70vh]"
+  className=" -mt-48  -mb-40 sm:mb-0 sm:mt-0 sm:object-cover w-screen h-[70vh]"
   autoPlay
   muted
+  loop
   cldVid={cld.video('ji6qdcwev4ptfvxdzhkl').quality('auto')}
 />
       </SwiperSlide>
