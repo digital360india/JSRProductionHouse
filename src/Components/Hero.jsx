@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import { useEffect, useState } from "react";
 import "../released.css";
 
-// import required modules
+
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Hero = () => {
