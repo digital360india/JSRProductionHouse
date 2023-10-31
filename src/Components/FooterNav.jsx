@@ -10,7 +10,7 @@ const FooterNav = () => {
             <Link to="/">
               <img
                 className="w-12 h-14"
-                src="https://cdn.discordapp.com/attachments/1078905801017659432/1099960093216354415/JSR_logo.png"
+                src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737148/samples/a9netvmy3epwecuknnpq.png"
                 alt=""
               />
             </Link>

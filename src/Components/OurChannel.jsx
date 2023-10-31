@@ -1,5 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import {quality} from "@cloudinary/url-gen/actions/delivery";
+import {auto} from "@cloudinary/url-gen/qualifiers/quality";
 const OurChannel = () => {
   var [para, setPara] = useState([]);
   async function get() {
@@ -32,7 +34,8 @@ const OurChannel = () => {
               target="_blank"
             >
               <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691128687/PRODUCTION-HOUSE_warbtn.png"
+                // src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737148/samples/a9netvmy3epwecuknnpq.png"
+                src={new CloudinaryImage("https://res.cloudinary.com/dsea9eyps/image/upload/v1698737148/samples/a9netvmy3epwecuknnpq.png").delivery(quality(auto()))}
                 alt="JSR Production House"
                 className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
               />
@@ -41,7 +44,7 @@ const OurChannel = () => {
           <div className="hover:scale-125 duration-200">
             <a href="https://www.youtube.com/@JSRRECORDLABEL" target="_blank">
               <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691128688/RECORD-LABEL_gaq31x.png "
+                src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737408/samples/jydv1y0pssxb035vm8dt.png"
                 alt="JSR Record Label"
                 className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
               />
@@ -53,7 +56,7 @@ const OurChannel = () => {
               target="_blank"
             >
               <img
-                src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691128688/RECORDS-REGIONAL_h1dgav.png  "
+                src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737451/samples/z965k6iozmv6avww0q0s.png"
                 alt="JSR Record Label"
                 className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
               />
