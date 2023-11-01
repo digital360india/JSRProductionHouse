@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import FooterNav from "../Components/FooterNav";
 import Service from "../Components/Service";
 import { BsTwitter } from "react-icons/bs";
+import WorkWithUs from "../Components/WorkWithUs";
 
 const Contact = () => {
   useEffect(() => {
@@ -90,11 +91,12 @@ const Contact = () => {
           </ul>
 
           <div className="p-10 pb-10 lg:pb-20 flex gap-32 lg:flex-row  flex-col items-center justify-center text-5xl lg:text-6xl pt-20 lg:pt-20 leading-14 lg:leading-16 tracking-[4px] lg:tracking-[6px]">
-            <>
-              <div className="flex flex-col justify-center items-center lg:items-end">
+            <WorkWithUs/>
+            {/* <> */}
+              {/* <div className="flex flex-col justify-center items-center lg:items-end">
                 <div className="w-[300px] lg:w-[450px] p-5 lg:pl-10 lg:p-2 text-center">
                   FOR ANY QUERIES LEAVE US A MESSAGE!
-                </div>
+                </div> */}
                 {/* <div className="flex gap-8 w-60   pt-2 lg:pt-8">
                   <a href="https://www.facebook.com/JSRProductionhouse">
                     <img
@@ -121,9 +123,9 @@ const Contact = () => {
                     <BsTwitter className="w-8 h-8 text-blue-500 hover:scale-125  duration-200" />
                   </a>
                 </div> */}
-              </div>
-            </>
-            <>
+              {/* </div> */}
+            {/* </> */}
+            {/* <>
               <div className=" flex flex-col gap-4 items-center lg:pl-16 justify-center ">
                 <textarea
                   type="text"
@@ -159,7 +161,7 @@ const Contact = () => {
                   ></span>
                 </a>
               </div>
-            </>
+            </> */}
           </div>
         </div>
       </div>
