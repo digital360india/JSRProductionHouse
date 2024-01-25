@@ -84,7 +84,7 @@ const Team = () => {
           </div>
           <div className="flex flex-col justify-center items-center sm:ps-14 lg:flex-row pt-5 lg:pb-40 md:mr-16">
             <img
-              src='../Public/Images/jsr8.png'
+              src='Images/prashil.jpg'
               
               alt=""
               className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] object-contain"
