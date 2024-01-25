@@ -106,7 +106,6 @@ const WorkWithUs = ({message1}) => {
           )}
           {success && (
             <div className="text-green-700 text-sm font2 tracking-normal">
-<<<<<<< Updated upstream
                <Popup  
                open={success}
                closeOnEscape={false}
@@ -124,9 +123,9 @@ const WorkWithUs = ({message1}) => {
                 </div>
     
   </Popup>
-=======
+
               Thank you for submitting your Queries, Our team will get back to you soon..
->>>>>>> Stashed changes
+
             </div>
           )}
         </div>
