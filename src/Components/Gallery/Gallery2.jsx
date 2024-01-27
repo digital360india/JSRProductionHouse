@@ -32,6 +32,7 @@ const Gallery2 = () => {
 
     fetchProducts();
   }, []);
+  let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
 
   return (
     <div>
@@ -66,14 +67,24 @@ const Gallery2 = () => {
                 prevEl: ".swiper-button-prev",
               }}
             >
-              {gallery &&
+              {/* {gallery &&
                 gallery.map((url, index) => (
                   <SwiperSlide key={index} className="tranding-slide">
                     <PhotoView src={url}>
                       <img src={url} alt={`Slide ${index}`} />
                     </PhotoView>
                   </SwiperSlide>
-                ))}
+                ))} */}
+                {
+                  arr.map((i,index)=>(
+                    <SwiperSlide key={index} className="tranding-slide">
+                    <PhotoView src={`gallery${i}.jpg`}>
+                      <img src={`gallery${i}.jpg`} alt={`Slide ${index}`} />
+                    </PhotoView>
+                  </SwiperSlide>
+                  ))
+
+                }
             </Swiper>
           </PhotoProvider>
         )
