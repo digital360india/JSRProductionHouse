@@ -96,7 +96,8 @@ const Services = () => {
           <SwiperSlide >
             <div className="flex  justify-center w-full">
               <img
-                src={banner}
+              src="Banner.jpg"
+                // src={banner}
                 // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
                 alt=""
                 className="h-[400px] lg:h-[500px] w-full object-cover"
