@@ -106,7 +106,7 @@ const Services = () => {
           </SwiperSlide>
         </Swiper>
         <img
-          src="https://res.cloudinary.com/djb3n17c0/image/upload/v1691131047/EXTRA._gumksl.png"
+          src="Banner.jpg"
           alt=""
           className="lg:hidden h-[400px] lg:h-[500px] w-full object-cover"
         />
