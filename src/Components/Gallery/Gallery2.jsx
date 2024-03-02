@@ -40,9 +40,11 @@ const Gallery2 = () => {
         GALLERY
       </h1>
 
-      { isLoading ? (
-          <p>Loading...</p>
-        ) : (
+      { 
+      // isLoading ? (
+      //     <p>Loading...</p>
+      //   ) :
+         (
           <PhotoProvider>
             <Swiper
               className="tranding-slider"
