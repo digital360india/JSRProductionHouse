@@ -159,13 +159,14 @@ const ReleasedProjects = () => {
         modules={[Pagination, Autoplay]}
         className="mySwiper p-2"
       >
-        {/* {loading
-          ? [1, 2, 3, 4].map((index) => (
-              <SwiperSlide key={index}>
-                <SkeletonCard />
-              </SwiperSlide>
-            ))
-          :  */}
+        {
+        // loading
+        //   ? [1, 2, 3, 4].map((index) => (
+        //       <SwiperSlide key={index}>
+        //         <SkeletonCard />
+        //       </SwiperSlide>
+        //     ))
+        //   : 
           RP.map((item, index) => {
               return (
                 <SwiperSlide key={index} className="">
