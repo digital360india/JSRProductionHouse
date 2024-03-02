@@ -36,6 +36,89 @@ const ReleasedProjects = () => {
     return () => clearTimeout(timeOutId);
   }, []);
 
+  const RP = [
+    {
+      title: "72 HOURS: Martyr Who Never Died (Feature Film)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740757/pqun3jlv94xwhuerdnbg.jpg",
+      producer:"JS Rawat,                         Tarun Singh Rawat      ",
+      director: "Avinash Dhyani",
+      dop:"Harish Negi",
+      link:"https://www.primevideo.com/detail/72-Hours-Martyr-Who-Never-Died/0M2CTFCCYKMAF96HB2M60AK72K",
+    },
+    {
+      title: "SCENE GALAT (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740804/avdrrsjd7ivmednnjfc3.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Tarun Singh Rawat",
+      dop:"Suniel Kumar",
+      link:"https://youtu.be/gXz1Kuu9hq4",
+    },
+    {
+      title: "MERO DIL AEYGAI (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698741236/bwfd4n6av0iwodkuicrz.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Tarun Singh Rawat",
+      dop:"Prashant Kamboj",
+      link:"https://youtu.be/XbeCM5eQmzM",
+    },
+    {
+      title: "RUKHSAT (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698741261/mdcvzhen3xznyjah29gs.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Harsh Kumar",
+      dop:"Harish Negi",
+      link:"https://youtu.be/b9b8nulTBeM",
+    },
+    {
+      title: "KHAYALUN MA (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698741288/uqlr5rph07ktnhyt6wvu.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Tarun Singh Rawat",
+      dop:"Prashant Kamboj",
+      link:"https://www.youtube.com/watch?v=w-GxPBP4piA&feature=youtu.be",
+    },
+    {
+      title: "TU NA SAHI (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698741313/vezgmjy3tt1mwtzdeivd.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Mayank Kalra",
+      dop:"Harish Negi",
+      link:"https://youtu.be/HTxoxOWRhRo",
+    },
+    {
+      title: "SPEED (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698741347/rykbz3b29qo80nx0g5e5.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Tarun Singh Rawat",
+      dop:"Harish Negi",
+      link:"https://youtu.be/HtTxJN4-G3M",
+    },
+    {
+      title: "BAIRI PIYA (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698741385/vys3fa9spwneyxc7zfnm.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Karan Arora",
+      dop:"Harish Negi",
+      link:"https://youtu.be/VdtLg-a8iyg",
+    },
+    {
+      title: "KUYEDI (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698741422/jjhutivl7goaiy18dq4g.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Tarun Singh Rawat",
+      dop:"Deepankar Ghildiyal",
+      link:"https://youtu.be/EC1bYmTSkvk",
+    },
+    {
+      title: "BABY BAS KAR (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698741458/ehr1mbkhsz6quuusgfjd.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Karan Arora",
+      dop:"Harish Negi",
+      link:"https://youtu.be/SN1KfPk4-yQ",
+    },
+  ]
+
   return (
     <>
       <div>
@@ -82,7 +165,7 @@ const ReleasedProjects = () => {
                 <SkeletonCard />
               </SwiperSlide>
             ))
-          : array.map((item, index) => {
+          : RP.map((item, index) => {
               return (
                 <SwiperSlide key={index} className="">
                   <Card data={item}/>

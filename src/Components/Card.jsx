@@ -6,31 +6,31 @@ const Card = (data) => {
   return (
     <>
       <div className="flex flex-col bg-gray-50  ">
-        <a href={data?.data?.link} target="_blank">
+        <a href={data?.link} target="_blank">
           <img
             className="w-60 h-64 md:w-60 md:h-72 xl:w-80 xl:h-[400px]"
-            src={data?.data?.img}
+            src={data?.img}
             alt=""
           />
         </a>
         {/* <div></div> */}
         <p className="font2 pt-2 pb-4 md:ps-6  lg:pt-2  self-center flex flex-col gap-2  ">
-          <li className="font-bold text-lg  ">{data?.data?.title}</li>
+          <li className="font-bold text-lg  ">{data?.title}</li>
           <div className="flex  flex-col pt-2 text-base  justify-start items-start text-left   h-24 ">
-            {data?.data?.producer !== "" && data?.data?.producer !== " " && <li className="">
+            {data?.producer !== "" && data?.producer !== " " && <li className="">
               <span className="font-semibold">Producer : </span>
-              {data?.data?.producer}
+              {data?.producer}
             </li>}
             <li className=" ">
               {" "}
               <span className="font-semibold">Director : </span>
-              {data?.data?.director}
+              {data?.director}
             </li>
-            {data?.data?.dop ? (
+            {data?.dop ? (
               <li className="  ">
                 {" "}
                 <span className="font-semibold ">DOP : </span>
-                {data?.data?.dop}
+                {data?.dop}
               </li>
             ) : null}
           </div>
