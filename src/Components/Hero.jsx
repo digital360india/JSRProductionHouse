@@ -21,7 +21,7 @@ const Hero = () => {
       );
       const data = await response.json();
       console.log(data);
-      setArray(data);
+      setArray([{link:"https://res.cloudinary.com/djb3n17c0/video/upload/v1693649840/NON-CINEMASCOPE_logo_cgnxwi.mp4"}]);
     };
     fetchProducts();
   },[]);
