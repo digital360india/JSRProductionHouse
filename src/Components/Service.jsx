@@ -88,7 +88,7 @@ const ar=[
           data-aos="fade-up"
         >
           <img
-            src={a[0]?.img}
+            src={ar[0]?.img}
             alt=""
             className="w-[320px]  md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px]"
           />
@@ -97,23 +97,23 @@ const ar=[
               className=" text-2xl lg:text-5xl pt-5 lg:pb-5"
               data-aos="fade-up"
             >
-               {a[0]?.mainHeading}
+               {ar[0]?.mainHeading}
             </h1>
             <p className="font2 opacity-40 pb-4">
-            {a[0]?.desc}
+            {ar[0]?.desc}
             </p>
             <ul className="font2 flex flex-col gap-2">
               <li><h1>{a[0]?.subHeading1}</h1></li>
               <li className="opacity-40">
-              {a[0]?.desc1}
+              {ar[0]?.desc1}
               </li>
-              <li><h1>{a[0]?.subHeading2}</h1></li>
+              <li><h1>{ar[0]?.subHeading2}</h1></li>
               <li className="opacity-40">
-              {a[0]?.desc2}
+              {ar[0]?.desc2}
               </li>
               <li><h1>{a[0]?.subHeading3}</h1></li>
               <li className="opacity-40">
-              {a[0]?.desc3}
+              {ar[0]?.desc3}
               </li>
             </ul>
           </div>
@@ -125,28 +125,28 @@ const ar=[
               className=" text-2xl lg:text-5xl  pt-5 lg:pb-5"
               data-aos="fade-up"
             >
-              {a[1]?.mainHeading}
+              {ar[1]?.mainHeading}
             </h1>
             <p className="font2 opacity-40 pb-4">
-            {a[1]?.desc1}
+            {ar[1]?.desc1}
             </p>
             <ul className="font2 flex flex-col gap-2">
-              <li><h1>{a[1]?.subHeading1}</h1></li>
+              <li><h1>{ar[1]?.subHeading1}</h1></li>
               <li className="opacity-40">
-              {a[1]?.desc1}
+              {ar[1]?.desc1}
               </li>
-              <li><h1>{a[1]?.subHeading2}</h1></li>
+              <li><h1>{ar[1]?.subHeading2}</h1></li>
               <li className="opacity-40">
-              {a[1]?.desc2}
+              {ar[1]?.desc2}
               </li>
-              <li><h1>{a[1]?.subHeading3}</h1></li>
+              <li><h1>{ar[1]?.subHeading3}</h1></li>
               <li className="opacity-40">
-              {a[1]?.desc3}
+              {ar[1]?.desc3}
               </li>
             </ul>
           </div>
           <img
-            src={a[1]?.img}
+            src={ar[1]?.img}
             alt=""
             className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] lg:ml-16 xl:ml-20 "
             data-aos="fade-up"
@@ -156,7 +156,7 @@ const ar=[
       <div className="bg-black text-justify p-5 md:p-12 px-6 h-full w-[100%] text-white ">
         <div className="flex flex-col justify-center items-center lg:flex-row pb-10 lg:pb-40">
           <img
-            src={a[2]?.img}
+            src={ar[2]?.img}
             alt=""
             className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px]"
             data-aos="fade-up"
@@ -166,23 +166,23 @@ const ar=[
               className=" text-2xl lg:text-5xl pt-5 lg:pb-5"
               data-aos="fade-up"
             >
-              {a[2]?.mainHeading}
+              {ar[2]?.mainHeading}
             </h1>
             <p className="font2 opacity-40 pb-4">
-            {a[2]?.desc}
+            {ar[2]?.desc}
             </p>
             <ul className="font2 flex flex-col gap-2">
-              <li><h1>{a[2]?.subHeading1}</h1></li>
+              <li><h1>{ar[2]?.subHeading1}</h1></li>
               <li className="opacity-40">
-              {a[2]?.desc1}
+              {ar[2]?.desc1}
               </li>
-              <li><h1>{a[2]?.subHeading2}</h1></li>
+              <li><h1>{ar[2]?.subHeading2}</h1></li>
               <li className="opacity-40">
-              {a[2]?.desc2}
+              {ar[2]?.desc2}
               </li>
-              <li><h1>{a[2]?.subHeading3}</h1></li>
+              <li><h1>{ar[2]?.subHeading3}</h1></li>
               <li className="opacity-40">
-              {a[2]?.desc3}
+              {ar[2]?.desc3}
               </li>
             </ul>
           </div>
@@ -194,28 +194,28 @@ const ar=[
               className=" text-2xl lg:text-5xl  pt-5 lg:pb-5 "
               data-aos="fade-up"
             >
-              {a[3]?.mainHeading}
+              {ar[3]?.mainHeading}
             </h1>
             <p className="font2 opacity-40 pb-4">
-            {a[3]?.desc}
+            {ar[3]?.desc}
             </p>
             <ul className="font2 flex flex-col gap-2">
-              <li><h1>{a[3]?.subHeading1}</h1></li>
+              <li><h1>{ar[3]?.subHeading1}</h1></li>
               <li className="opacity-40">
-              {a[3]?.desc1}
+              {ar[3]?.desc1}
               </li>
-              <li><h1>{a[3]?.subHeading2}</h1></li>
+              <li><h1>{ar[3]?.subHeading2}</h1></li>
               <li className="opacity-40">
-              {a[3]?.desc2}
+              {ar[3]?.desc2}
               </li>
               <li><h1>{a[3]?.subHeading3}</h1></li>
               <li className="opacity-40">
-              {a[3]?.desc3}
+              {ar[3]?.desc3}
               </li>
             </ul>
           </div>
           <img
-            src={a[3]?.img}
+            src={ar[3]?.img}
             alt=""
             className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] lg:ml-16 xl:ml-20  "
             data-aos="fade-up"
@@ -225,7 +225,7 @@ const ar=[
       <div className="bg-black text-justify p-5 md:p-12 px-6 h-full w-[100%] text-white ">
         <div className="flex flex-col justify-center items-center lg:flex-row pb-10 lg:pb-40">
           <img
-            src={a[4]?.img}
+            src={ar[4]?.img}
             alt=""
             className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px]"
             data-aos="fade-up"
@@ -235,23 +235,23 @@ const ar=[
               className=" text-2xl lg:text-5xl pt-5 lg:pb-5"
               data-aos="fade-up"
             >
-              {a[4]?.mainHeading}
+              {ar[4]?.mainHeading}
             </h1>
             <p className="font2 opacity-40 pb-4">
-            {a[4]?.desc}
+            {ar[4]?.desc}
             </p>
             <ul className="font2 flex flex-col gap-2">
-              <li><h1>{a[4]?.subHeading1}</h1></li>
+              <li><h1>{ar[4]?.subHeading1}</h1></li>
               <li className="opacity-40">
-              {a[4]?.desc1}
+              {ar[4]?.desc1}
               </li>
-              <li><h1>{a[4]?.subHeading2}</h1></li>
+              <li><h1>{ar[4]?.subHeading2}</h1></li>
               <li className="opacity-40">
-              {a[4]?.desc2}
+              {ar[4]?.desc2}
               </li>
-              <li><h1>{a[4]?.subHeading3}</h1></li>
+              <li><h1>{ar[4]?.subHeading3}</h1></li>
               <li className="opacity-40">
-              {a[4]?.desc3}
+              {ar[4]?.desc3}
               </li>
             </ul>
           </div>
