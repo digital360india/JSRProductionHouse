@@ -35,6 +35,65 @@ const UpcomingProjects = () => {
     return () => clearTimeout(timeOutId);
   }, []);
 
+  const UP = [
+    {
+      title: "BAD MUNDEY (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740436/jecyrnl5v4eyovotpnl3.jpg",
+      producer:"JTarun Singh Rawat",
+      director: "Tarun Singh Rawat",
+      dop:"Suniel Kumar",
+      link:" ",
+    },
+    {
+      title: "DEEPER (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740466/fwmlhebuiftcq9mtqzig.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Tarun Singh Rawat",
+      dop:"Suniel Kumar",
+      link:" ",
+    },
+    {
+      title: "ROMEO (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740500/tkhuqqhzmrztzvfap6o2.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Tarun Singh Rawat",
+      dop:"Suniel Kumar",
+      link:" ",
+    },
+    {
+      title: "MUSSORIIE  BOYZ [FEATURE FLIM]",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740532/m6haogzmypla4xi4b6k1.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Hriday V. Shetty",
+      dop:"Faroque Khan",
+      link:" ",
+    },
+    {
+      title: "CHHAL [FEATURE FLIM]",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740563/cbm2y7zeflmibg2grttq.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Yogesh Vats",
+      dop:"Yogesh Vats",
+      link:" ",
+    },
+    {
+      title: "AGENT ONE [WEB SERIES]",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740664/alttbsah74josrtddy3e.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Tarun Singh Rawat",
+      dop:"Suniel Kumar",
+      link:" ",
+    },
+    {
+      title: "BAS AB REHNE DO",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740703/p33dx0dfgxnqga5uqgto.jpg",
+      producer:"Tarun Singh Rawat",
+      director: "Tarun Singh Rawat",
+      dop:"Suniel Kumar",
+      link:" ",
+    },
+  ]
+
   return (
     <>
       <div className="">
@@ -78,13 +137,15 @@ const UpcomingProjects = () => {
         modules={[Pagination, Autoplay]}
         className="mySwiper p-2"
       >
-        {loading
-          ? [1, 2, 3, 4].map((index) => (
-              <SwiperSlide key={index}>
-                <SkeletonCard />
-              </SwiperSlide>
-            ))
-          : array.map((item, index) => {
+        {
+        // loading
+        //   ? [1, 2, 3, 4].map((index) => (
+        //       <SwiperSlide key={index}>
+        //         <SkeletonCard />
+        //       </SwiperSlide>
+        //     ))
+        //   : 
+          UP.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
                   <Card data={item} />
