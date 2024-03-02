@@ -2,18 +2,44 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const Team = () => {
-  const [bods, setBods] = useState([]);
-  async function get() {
-    try {
-      const { data } = await axios.get("https://jsr-backend-p4sz.onrender.com/Bod");
-      setBods(data);
-    } catch (e) {
-      console.log(e);
-    }
-  }
-  useEffect(() => {
-    get();
-  }, []);
+  // const [bods, setBods] = useState([]);
+  // async function get() {
+  //   try {
+  //     const { data } = await axios.get("https://jsr-backend-p4sz.onrender.com/Bod");
+  //     setBods(data);
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }
+  // useEffect(() => {
+  //   get();
+  // }, []);
+  const bods = [
+    {
+      name: "Tarun Singh Rawat",
+      desig: "Vice Chairman, JSR Group",
+      content: "Tarun Singh Rawat is a titled entrepreneur, producer and director. As a young, successful producer and businessman, he has been working hard to build a legacy as one of the most influential names in his industry. He is known for his ability to spot trends early and turn them into profit and won several awards for the same. It's no wonder that he has made such an impact on the world around him. As a leader, he is known for his ability to motivate others and drive them towards success, but what makes him truly remarkable are his values and integrity.",
+      img: "https://cdn.discordapp.com/attachments/1078905801017659432/1099956366891831397/Tarun.png",
+    },
+    {
+      name: "J. S. Rawat",
+      desig: "",
+      content: "J. S. Rawat, the visionary founder and owner of JSR Group, hailing from Uttarakhand, embarked on an inspiring journey that began with humble roots. Starting with the real estate business, he laid the foundation of his business empire through successful ventures in the realm of properties and developments. Fuelled by unwavering determination, Rawat's ventures expanded to encompass diverse domains, including the renowned JSR Production House, JSR Record Label, JSR Law Consultancy, and the esteemed JSR Group of hotels. His remarkable ascent stands as a testament to the power of hard work and innovation, propelling him from modest beginnings to the pinnacle of entrepreneurship.",
+      img: "https://res.cloudinary.com/djb3n17c0/image/upload/v1694415722/B_rsmfqt.png",
+    },
+    {
+      name: "Hemal Rawat",
+      desig: "",
+      content: "Hemal Rawat is a cornerstone of strength, wisdom, and entrepreneurship within the group's dynamic narrative. Beyond being a supportive partner and a nurturing mother, Hemal Rawat is a distinguished businesswoman in her own right. Her enduring commitment and entrepreneurial flair have not only left an indelible mark on the JSR Group but have also given birth to her own venture – H Beauty Studio, a thriving chain of beauty salons. Hemal Rawat's profound contributions to JSR Production House have elevated the creative essence of the group, showcasing her passion and expertise. She encapsulates the epitome of a remarkable woman who deftly manages her roles as an accomplished business leader, a devoted mother, and a visionary entrepreneur.",
+      img: "https://hbeautystudio.com/img/Untitled-4.jpg",
+    },
+    {
+      name: "Prashil Rawat",
+      desig: "",
+      content: "Born in 7 January 1991, Prashil Rawat is a titled entrepreneur and actor. He has a strong inclination for acting, which has propelled him to pursue it as a career. Prashil has a strong relationship with the art of acting and constantly striving to learn new skills and techniques to improve his performance as an actor. His favourite thing about being an actor is getting to play different characters and learning new things about the timeless art of acting. One thing that attracts him to acting is its power to create a new world where anything is possible.",
+      img: "",
+    },
+  ]
   return (
     <div>
       <>
