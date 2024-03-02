@@ -99,7 +99,7 @@ const Member = () => {
           <SwiperSlide >
             <div className=" flex justify-center w-full">
               <img
-                src={banner}
+                src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698741627/nohw0npkhlungrjrharo.png"
                 // src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/03/h4-title-image.jpg"
                 alt=""
                 className="h-[400px] lg:h-[500px] w-full object-cover"
@@ -111,7 +111,7 @@ const Member = () => {
          
 
 
-  <img src={banner} alt="Banner Image" 
+  <img src= "https://res.cloudinary.com/dsea9eyps/image/upload/v1698741627/nohw0npkhlungrjrharo.png" alt="Banner Image" 
             className="h-[400px] lg:h-[500px] w-full object-cover"
           />
         </div>
