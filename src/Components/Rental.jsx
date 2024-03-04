@@ -7,22 +7,49 @@ Aos.init({
 });
 
 const Rental = () => {
-  const [rentals, setRentals] = useState([]);
+  // const [rentals, setRentals] = useState([]);
+  const rentals = [
+    {
+      heading: "Professional cinema cameras, equipments and lenses",
+      content:
+        "At JSR, we take immense pride in providing top-tier equipment to fuely…",
+    },
+    {
+      heading: "Professional lighting system and gears",
+      content:
+        "We understand that lighting is a fundamental element in the art of fil…",
+    },
+    {
+      heading: "Renting The Studio",
+      content:
+        "Are you in search of the perfect studio space for your creative endeav…",
+    },
+    {
+      heading: "Transport & logistics",
+      content:
+        "At JSR Production House, we understand that seamless logistics are vit…",
+    },
+    {
+      heading: "Location & Accomodation",
+      content:
+        "At JSR Production House, we understand that comfortable and convenient…",
+    },
+  ];
 
-  async function get() {
-    try {
-      const { data } = await axios.get(
-        "https://jsr-backend-p4sz.onrender.com/Rentals"
-      );
-      // console.log("data[0]",data[0]);
-      setRentals(data);
-    } catch (e) {
-      console.log(e);
-    }
-  }
-  useEffect(() => {
-    get();
-  }, []);
+  // async function get() {
+  //   try {
+  //     const { data } = await axios.get(
+  //       "https://jsr-backend-p4sz.onrender.com/Rentals"
+  //     );
+  //     // console.log("data[0]",data[0]);
+  //     setRentals(data);
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // }
+  // useEffect(() => {
+  //   get();
+  // }, []);
   return (
     <>
       {/* <div className="bg-black p-5 md:p-12 px-6 h-full w-[100%] text-white ">
@@ -155,10 +182,11 @@ const Rental = () => {
               <h3
                 key={index}
                 className="text-xl lg:text-4xl text-start bg-black text-white pt-5 lg:pt-2 pb-6 lg:pb-6"
+                data-aos="fade-up"
               >
                 {item?.heading}
               </h3>
-              <p className="font2 opacity-40 pb-10">{item?.content}</p>
+              <p className="font2 opacity-40 pb-10" data-aos="fade-up">{item?.content}</p>
             </>
           );
         })}
