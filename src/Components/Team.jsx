@@ -60,7 +60,7 @@ const Team = () => {
               </ul>
             </div>
             <img
-              src={bods[0]?.img}
+              src="TARUN-2.png"
               alt=""
               className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] lg:ml-16 xl:ml-20 object-contain "
               data-aos="fade-up"
