@@ -16,9 +16,9 @@ const Team = () => {
   // }, []);
   const bods = [
     {
-      name: "Tarun Singh Rawat",
+      name: "Tarun Rawat",
       desig: "Vice Chairman, JSR Group",
-      content: "Tarun Singh Rawat is a titled entrepreneur, producer and director. As a young, successful producer and businessman, he has been working hard to build a legacy as one of the most influential names in his industry. He is known for his ability to spot trends early and turn them into profit and won several awards for the same. It's no wonder that he has made such an impact on the world around him. As a leader, he is known for his ability to motivate others and drive them towards success, but what makes him truly remarkable are his values and integrity.",
+      content: "Tarun Rawat is a titled entrepreneur, producer and director. As a young, successful producer and businessman, he has been working hard to build a legacy as one of the most influential names in his industry. He is known for his ability to spot trends early and turn them into profit and won several awards for the same. It's no wonder that he has made such an impact on the world around him. As a leader, he is known for his ability to motivate others and drive them towards success, but what makes him truly remarkable are his values and integrity.",
       img: "https://cdn.discordapp.com/attachments/1078905801017659432/1099956366891831397/Tarun.png",
     },
     {
