@@ -9,7 +9,8 @@ const Ventures = () => {
       {/* <p className="font2  py-2 lg:py-8 w-[320px] md:w-[550px] lg:w-[800px] lg:text-[14px] tracking-wide leading-7 text-gray-600 text-center ">
         VHS media llp, JSR Production house, JSR Record label
       </p> */}
-      <div className=" pt-10  flex  justify-around">
+      <div className=" pt-10  flex flex-col md:flex-row justify-around">
+
         <div className="cursor-pointer flex gap-4 lg:gap-36 items-center ">
           <div className="hover:scale-125 duration-200">
             <a
@@ -49,8 +50,10 @@ const Ventures = () => {
               />
             </a>
           </div>
-
-          <div className="hover:scale-125 duration-200">
+          
+        </div>
+        <div className="cursor-pointer flex gap-4 lg:gap-36 items-center ">
+        <div className="hover:scale-125 duration-200">
             <a
               href="https://instagram.com/vhs_mediallp?igshid=MzRlODBiNWFlZA=="
               target="_blank"
@@ -83,6 +86,7 @@ const Ventures = () => {
             </a>
           </div>
         </div>
+
       </div>
     </>
   );
