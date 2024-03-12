@@ -71,7 +71,7 @@ const Team = () => {
           </div>
 
           <div className="flex flex-col justify-center items-center lg:flex-row pb-10 lg:pb-40 ">
-            <img src={bods[1]?.img} className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] object-contain"></img>
+            <img src="Chairman.png" className="w-[320px] md:w-[600px] lg:w-[430px] lg:h-[400px] xl:w-[650px] xl:h-[420px] object-contain"></img>
             <div className="md:mr-16 lg:ms-8 px-0 lg:pl-16 lg:leading-7 sm:ps-8 float-right justify-start pt-0 lg:pt-5 leading-0 w-[320px] md:w-[600px]">
               <h1
                 className=" text-2xl lg:text-5xl pt-5 lg:pb-5"
