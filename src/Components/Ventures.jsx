@@ -23,6 +23,55 @@ const Ventures = () => {
               />
             </a>
           </div>
+
+          <div className="hover:scale-125 duration-200">
+            <a
+              href="https://instagram.com/vhs_mediallp?igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+            >
+              <img
+                src="TVWorks.png"
+                alt="JSR TV Works"
+                className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
+              />
+            </a>
+          </div>
+
+          <div className="hover:scale-125 duration-200">
+            <a
+              href="https://instagram.com/vhs_mediallp?igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+            >
+              <img
+                src="Studios.png"
+                alt="JSR Studios"
+                className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
+              />
+            </a>
+          </div>
+
+          <div className="hover:scale-125 duration-200">
+            <a
+              href="https://instagram.com/vhs_mediallp?igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+            >
+              <img
+                src="Indie.png"
+                alt="Think Indie Films"
+                className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
+              />
+            </a>
+          </div>
+
+          <div className="hover:scale-125 duration-200">
+            <a href="https://instagram.com/jsrrecordlabel?igshid=MzRlODBiNWFlZA==" target="_blank">
+              <img
+                src="https://res.cloudinary.com/dsea9eyps/image/upload/v1698737451/samples/z965k6iozmv6avww0q0s.png"
+                alt="JSR Record Regional"
+                className="w-24 h-24 lg:w-40 lg:h-40 text-red-700"
+              />
+            </a>
+          </div>
        
           <div className="hover:scale-125 duration-200">
             <a href="https://instagram.com/jsrrecordlabel?igshid=MzRlODBiNWFlZA==" target="_blank">
