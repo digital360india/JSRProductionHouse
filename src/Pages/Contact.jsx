@@ -86,7 +86,7 @@ const Contact = () => {
               PHONE NO:{" "}
             </li>
             <li className="text-lg font2 w-60 leading-9 opacity-50">
-              07830399222
+              7830399666 , 7830399111
             </li>
           </ul>
 
