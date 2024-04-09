@@ -51,7 +51,7 @@ const Ventures = () => {
         <div className="cursor-pointer flex gap-4 lg:gap-36 items-center ">
           <div className="hover:scale-125 duration-200">
             <a
-              href="https://instagram.com/vhs_mediallp?igshid=MzRlODBiNWFlZA=="
+              href="#"
               target="_blank"
             >
               <img
@@ -93,7 +93,7 @@ const Ventures = () => {
       <div className="hidden pt-10  md:flex  justify-between w-full">
         <div className="hover:scale-125 duration-200">
           <a
-            href="https://instagram.com/vhs_mediallp?igshid=MzRlODBiNWFlZA=="
+            href="#"
             target="_blank"
           >
             <img
@@ -106,7 +106,7 @@ const Ventures = () => {
 
         <div className="hover:scale-125 duration-200">
           <a
-            href="https://instagram.com/vhs_mediallp?igshid=MzRlODBiNWFlZA=="
+            href="#"
             target="_blank"
           >
             <img
@@ -119,7 +119,7 @@ const Ventures = () => {
 
         <div className="hover:scale-125 duration-200">
           <a
-            href="https://instagram.com/vhs_mediallp?igshid=MzRlODBiNWFlZA=="
+            href="#"
             target="_blank"
           >
             <img
@@ -132,7 +132,7 @@ const Ventures = () => {
 
         <div className="hover:scale-125 duration-200">
           <a
-            href="https://instagram.com/vhs_mediallp?igshid=MzRlODBiNWFlZA=="
+            href="#"
             target="_blank"
           >
             <img
