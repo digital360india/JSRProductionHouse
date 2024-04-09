@@ -23,7 +23,7 @@ const Ventures = () => {
 
           <div className="hover:scale-125 duration-200">
             <a
-              href="https://instagram.com/vhs_mediallp?igshid=MzRlODBiNWFlZA=="
+              href="#"
               target="_blank"
             >
               <img
@@ -36,7 +36,7 @@ const Ventures = () => {
 
           <div className="hover:scale-125 duration-200">
             <a
-              href="https://instagram.com/vhs_mediallp?igshid=MzRlODBiNWFlZA=="
+              href="#"
               target="_blank"
             >
               <img
@@ -64,7 +64,7 @@ const Ventures = () => {
 
           <div className="hover:scale-125 duration-200">
             <a
-              href="https://instagram.com/jsrrecordlabel?igshid=MzRlODBiNWFlZA=="
+              href="#"
               target="_blank"
             >
               <img
@@ -77,7 +77,7 @@ const Ventures = () => {
 
           <div className="hover:scale-125 duration-200">
             <a
-              href="https://instagram.com/jsrrecordlabel?igshid=MzRlODBiNWFlZA=="
+              href="#"
               target="_blank"
             >
               <img
@@ -145,7 +145,7 @@ const Ventures = () => {
 
         <div className="hover:scale-125 duration-200">
           <a
-            href="https://instagram.com/jsrrecordlabel?igshid=MzRlODBiNWFlZA=="
+            href="#"
             target="_blank"
           >
             <img
@@ -158,7 +158,7 @@ const Ventures = () => {
 
         <div className="hover:scale-125 duration-200">
           <a
-            href="https://instagram.com/jsrrecordlabel?igshid=MzRlODBiNWFlZA=="
+            href="#"
             target="_blank"
           >
             <img
