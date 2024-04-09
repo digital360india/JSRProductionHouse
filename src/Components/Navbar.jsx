@@ -71,6 +71,11 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
                 CONTACT
               </li>
             </Link>
+            <Link to="https://drive.google.com/file/d/1NHCBX1FzQvQftfnnkNjU_FWEXv4PCHs4/view" target= "_blank">
+                <li className="hover:scale-125 hover:opacity-50 duration-200">
+                  BROCHURE
+                </li>
+              </Link>
           </ul>
         </div>
       )}
@@ -110,6 +115,11 @@ const Navbar = ({ navColor, navBgColor, absolute, bar }) => {
               <Link to="/rentals">
                 <li className="hover:scale-125 hover:opacity-50 duration-200">
                   RENTALS
+                </li>
+              </Link>
+              <Link to="https://drive.google.com/file/d/1NHCBX1FzQvQftfnnkNjU_FWEXv4PCHs4/view" target= "_blank">
+                <li className="hover:scale-125 hover:opacity-50 duration-200">
+                  BROCHURE
                 </li>
               </Link>
               {/* <li onClick={DrawerRight}>
