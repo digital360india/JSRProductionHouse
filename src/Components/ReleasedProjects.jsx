@@ -46,6 +46,14 @@ const ReleasedProjects = () => {
       link:"https://www.primevideo.com/detail/72-Hours-Martyr-Who-Never-Died/0M2CTFCCYKMAF96HB2M60AK72K",
     },
     {
+      title: "BAD MUNDEY (Music Video)",
+      img:"BAD-MUNDEY.jpg",
+      producer:"Tarun Rawat",
+      director: "Tarun Rawat",
+      dop:"Suniel Kumar",
+      link:"https://youtu.be/RrearhCtxgI?si=2fgsC3iwF3oElmVp",
+    },
+    {
       title: "SCENE GALAT (Music Video)",
       img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740804/avdrrsjd7ivmednnjfc3.jpg",
       producer:"Tarun Rawat",

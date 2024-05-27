@@ -36,14 +36,14 @@ const UpcomingProjects = () => {
   }, []);
 
   const UP = [
-    {
-      title: "BAD MUNDEY (Music Video)",
-      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740436/jecyrnl5v4eyovotpnl3.jpg",
-      producer:"Tarun Rawat",
-      director: "Tarun Rawat",
-      dop:"Suniel Kumar",
-      link:" ",
-    },
+    // {
+    //   title: "BAD MUNDEY (Music Video)",
+    //   img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740436/jecyrnl5v4eyovotpnl3.jpg",
+    //   producer:"Tarun Rawat",
+    //   director: "Tarun Rawat",
+    //   dop:"Suniel Kumar",
+    //   link:" ",
+    // },
     {
       title: "DEEPER (Music Video)",
       img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740466/fwmlhebuiftcq9mtqzig.jpg",
