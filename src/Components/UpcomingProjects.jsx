@@ -46,6 +46,14 @@ const UpcomingProjects = () => {
     // },
     {
       title: "DEEPER (Music Video)",
+      img:"siya-ram.jpg",
+      director:"Hriday V. Shetty",
+      producer: "Tarun Rawat",
+      dop:"Suniel Rawat",
+      link:" ",
+    },
+    {
+      title: "SIYA RAM (Music Video)",
       img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740466/fwmlhebuiftcq9mtqzig.jpg",
       producer:"Tarun Rawat",
       director: "Tarun Rawat",
