@@ -36,24 +36,9 @@ const UpcomingProjects = () => {
   }, []);
 
   const UP = [
-    // {
-    //   title: "BAD MUNDEY (Music Video)",
-    //   img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740436/jecyrnl5v4eyovotpnl3.jpg",
-    //   producer:"Tarun Rawat",
-    //   director: "Tarun Rawat",
-    //   dop:"Suniel Kumar",
-    //   link:" ",
-    // },
+ 
     {
       title: "DEEPER (Music Video)",
-      img:"siya-ram.jpg",
-      director:"Hriday V. Shetty",
-      producer: "Tarun Rawat",
-      dop:"Suniel Rawat",
-      link:" ",
-    },
-    {
-      title: "SIYA RAM (Music Video)",
       img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740466/fwmlhebuiftcq9mtqzig.jpg",
       producer:"Tarun Rawat",
       director: "Tarun Rawat",

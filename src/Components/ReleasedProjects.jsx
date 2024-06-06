@@ -37,6 +37,22 @@ const ReleasedProjects = () => {
   }, []);
 
   const RP = [
+       {
+      title: "BAD MUNDEY (Music Video)",
+      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740436/jecyrnl5v4eyovotpnl3.jpg",
+      producer:"Tarun Rawat",
+      director: "Tarun Rawat",
+      dop:"Suniel Kumar",
+      link:" ",
+    },
+    {
+      title: "SIYA RAM (Music Video)",
+      img:"siya-ram.jpg",
+      director:"Hriday V. Shetty",
+      producer: "Tarun Rawat",
+      dop:"Suniel Rawat",
+      link:" ",
+    },
     {
       title: "72 HOURS: Martyr Who Never Died (Feature Film)",
       img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740757/pqun3jlv94xwhuerdnbg.jpg",
