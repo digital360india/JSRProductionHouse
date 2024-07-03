@@ -21,11 +21,13 @@ const Card = (data) => {
               <span className="font-semibold">Producer : </span>
               {data?.data?.producer}
             </li>}
-            <li className=" ">
-              {" "}
-              <span className="font-semibold">Director : </span>
-              {data?.data?.director}
-            </li>
+          
+            {data?.data?.director && (
+  <li className=" ">
+    <span className="font-semibold">Director: </span>
+    {data.data.director}
+  </li>
+)}
             {data?.data?.singer && (
   <li className=" ">
     <span className="font-semibold">Singer: </span>
