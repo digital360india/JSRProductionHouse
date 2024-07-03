@@ -38,11 +38,11 @@ const ReleasedProjects = () => {
 
   const RP = [
        {
-      title: "BAD MUNDEY (Music Video)",
-      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740436/jecyrnl5v4eyovotpnl3.jpg",
+      title: "Birha (Audio)",
+      img:"BIRHA-VERTICLE-POSTER.jpg",
       producer:"Tarun Rawat",
-      director: "Tarun Rawat",
-      dop:"Suniel Kumar",
+      musicproducer: "Mad-Dyy",
+      singer:"Meedhya",
       link:" ",
     },
     {

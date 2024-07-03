@@ -26,6 +26,19 @@ const Card = (data) => {
               <span className="font-semibold">Director : </span>
               {data?.data?.director}
             </li>
+            {data?.data?.singer && (
+  <li className=" ">
+    <span className="font-semibold">Singer: </span>
+    {data.data.singer}
+  </li>
+)}
+         {data?.data?.musicproducer && (
+  <li className=" ">
+    <span className="font-semibold">Music Producer: </span>
+    {data.data.musicproducer}
+  </li>
+)}
+
             {data?.data?.dop ? (
               <li className="  ">
                 {" "}
