@@ -45,14 +45,14 @@ const UpcomingProjects = () => {
       dop:"Suniel Kumar",
       link:" ",
     },
-    {
-      title: "ROMEO (Music Video)",
-      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740500/tkhuqqhzmrztzvfap6o2.jpg",
-      producer:"Tarun Rawat",
-      director: "Tarun Rawat",
-      dop:"Suniel Kumar",
-      link:" ",
-    },
+    // {
+    //   title: "ROMEO (Music Video)",
+    //   img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740500/tkhuqqhzmrztzvfap6o2.jpg",
+    //   producer:"Tarun Rawat",
+    //   director: "Tarun Rawat",
+    //   dop:"Suniel Kumar",
+    //   link:" ",
+    // },
     {
       title: "MUSSORIIE  BOYZ [FEATURE FLIM]",
       img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740532/m6haogzmypla4xi4b6k1.jpg",
