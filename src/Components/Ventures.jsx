@@ -105,7 +105,7 @@ const Ventures = () => {
       <div className="hidden pt-10  md:flex  justify-between w-full">
         <div className="hover:scale-125 duration-200">
           <a
-            href="https://www.instagram.com/jsrrecordlabel?igsh=MmZ3amp4aDVuMTJ5"
+            href="https://www.instagram.com/vhsmedia.llp?igsh=MXBoMmRqbnM0Mm9ocQ=="
             target="_blank"
           >
             <img

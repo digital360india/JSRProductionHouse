@@ -31,7 +31,7 @@ const OurChannel = () => {
         <div className="cursor-pointer flex gap-4 lg:gap-36 items-center ">
           <div className="hover:scale-125 duration-200">
             <a
-              href="https://www.youtube.com/@jsrproductionhouse9127"
+              href=" https://youtube.com/@jsrproductionhouse?si=62bEq73408PN-uPK"
               target="_blank"
             >
               <img
