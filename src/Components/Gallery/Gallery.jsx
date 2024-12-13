@@ -10,10 +10,10 @@ const Gallery = (props) => {
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await fetch(
-        "https://jsr-backend-p4sz.onrender.com/Gallery"
+        "https://jsr-backend-x7rr.onrender.com/Gallery"
       );
       const data = await response.json();
-      console.log(data, " gallery =>>>");
+      // console.log(data, " gallery =>>>");
       setGallery(data);
       setLoading(false);
     };

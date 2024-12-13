@@ -20,10 +20,10 @@ const FutureProjects = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await fetch(
-        "https://jsr-backend-p4sz.onrender.com/Future"
+        "https://jsr-backend-x7rr.onrender.com/Future"
       );
       const data = await response.json();
-      console.log(data, "=>>>");
+      // console.log(data, "=>>>");
       setLoading(false);
       setArray(data);
     };

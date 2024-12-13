@@ -20,10 +20,10 @@ const UpcomingProjects = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await fetch(
-        "https://jsr-backend-p4sz.onrender.com/Upcoming"
+        "https://jsr-backend-x7rr.onrender.com/Upcoming"
       );
       const data = await response.json();
-      console.log(data, "=>>>");
+      // console.log(data, "=>>>");
       setLoading(false);
       setArray(data);
     };
@@ -35,57 +35,57 @@ const UpcomingProjects = () => {
     return () => clearTimeout(timeOutId);
   }, []);
 
-  const UP = [
+  // const UP = [
  
-    {
-      title: "DEEPER (Music Video)",
-      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740466/fwmlhebuiftcq9mtqzig.jpg",
-      producer:"Tarun Rawat",
-      director: "Tarun Rawat",
-      dop:"Suniel Kumar",
-      link:" ",
-    },
-    // {
-    //   title: "ROMEO (Music Video)",
-    //   img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740500/tkhuqqhzmrztzvfap6o2.jpg",
-    //   producer:"Tarun Rawat",
-    //   director: "Tarun Rawat",
-    //   dop:"Suniel Kumar",
-    //   link:" ",
-    // },
-    {
-      title: "MUSSORIIE  BOYZ [FEATURE FLIM]",
-      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740532/m6haogzmypla4xi4b6k1.jpg",
-      producer:"Tarun Rawat",
-      director: "Hriday V. Shetty",
-      dop:"Faroque Khan",
-      link:" ",
-    },
-    {
-      title: "CHHAL [FEATURE FLIM]",
-      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740563/cbm2y7zeflmibg2grttq.jpg",
-      producer:"Tarun Rawat",
-      director: "Yogesh Vats",
-      dop:"Yogesh Vats",
-      link:" ",
-    },
-    {
-      title: "AGENT ONE [WEB SERIES]",
-      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740664/alttbsah74josrtddy3e.jpg",
-      producer:"Tarun Rawat",
-      director: "Tarun Rawat",
-      dop:"Suniel Kumar",
-      link:" ",
-    },
-    {
-      title: "BAS AB REHNE DO",
-      img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740703/p33dx0dfgxnqga5uqgto.jpg",
-      producer:"Tarun Rawat",
-      director: "Tarun Rawat",
-      dop:"Suniel Kumar",
-      link:" ",
-    },
-  ]
+  //   {
+  //     title: "DEEPER (Music Video)",
+  //     img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740466/fwmlhebuiftcq9mtqzig.jpg",
+  //     producer:"Tarun Rawat",
+  //     director: "Tarun Rawat",
+  //     dop:"Suniel Kumar",
+  //     link:" ",
+  //   },
+  //   // {
+  //   //   title: "ROMEO (Music Video)",
+  //   //   img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740500/tkhuqqhzmrztzvfap6o2.jpg",
+  //   //   producer:"Tarun Rawat",
+  //   //   director: "Tarun Rawat",
+  //   //   dop:"Suniel Kumar",
+  //   //   link:" ",
+  //   // },
+  //   {
+  //     title: "MUSSORIIE  BOYZ [FEATURE FLIM]",
+  //     img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740532/m6haogzmypla4xi4b6k1.jpg",
+  //     producer:"Tarun Rawat",
+  //     director: "Hriday V. Shetty",
+  //     dop:"Faroque Khan",
+  //     link:" ",
+  //   },
+  //   {
+  //     title: "CHHAL [FEATURE FLIM]",
+  //     img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740563/cbm2y7zeflmibg2grttq.jpg",
+  //     producer:"Tarun Rawat",
+  //     director: "Yogesh Vats",
+  //     dop:"Yogesh Vats",
+  //     link:" ",
+  //   },
+  //   {
+  //     title: "AGENT ONE [WEB SERIES]",
+  //     img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740664/alttbsah74josrtddy3e.jpg",
+  //     producer:"Tarun Rawat",
+  //     director: "Tarun Rawat",
+  //     dop:"Suniel Kumar",
+  //     link:" ",
+  //   },
+  //   {
+  //     title: "BAS AB REHNE DO",
+  //     img:"https://res.cloudinary.com/dsea9eyps/image/upload/v1698740703/p33dx0dfgxnqga5uqgto.jpg",
+  //     producer:"Tarun Rawat",
+  //     director: "Tarun Rawat",
+  //     dop:"Suniel Kumar",
+  //     link:" ",
+  //   },
+  // ]
 
   return (
     <>
@@ -138,7 +138,7 @@ const UpcomingProjects = () => {
         //       </SwiperSlide>
         //     ))
         //   : 
-          UP.map((item, index) => {
+          array.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
                   <Card data={item} />

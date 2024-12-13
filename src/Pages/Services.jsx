@@ -23,7 +23,7 @@ const Services = () => {
   }, []);
   async function get() {
     try {
-      const { data } = await axios.get("https://jsr-backend-p4sz.onrender.com/Banner/services");
+      const { data } = await axios.get("https://jsr-backend-x7rr.onrender.com/Banner/services");
       console.log(data);
       setBanner(data.img);
     } catch (e) {

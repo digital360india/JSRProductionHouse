@@ -17,7 +17,7 @@ import WorkWithUs from "../Components/WorkWithUs";
 // import required modules
 // import { Autoplay, Pagination, Navigation } from "swiper";
 const Rentals = () => {
-  // const [banner, setBanner] = useState({});
+  const [banner, setBanner] = useState({});
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
@@ -27,7 +27,7 @@ const Rentals = () => {
 
   const postMessage = async () => {
     try {
-      const apiURL = "https://jsr-backend-p4sz.onrender.com/Query/";
+      const apiURL = "https://jsr-backend-x7rr.onrender.com/Query/";
 
       const postData = {
         message,
@@ -69,18 +69,18 @@ const Rentals = () => {
     setSuccess(false);
     setWarning(false);
   }, []);
-  // async function get() {
-  //   try {
-  //     const { data } = await axios.get("https://jsr-backend-p4sz.onrender.com/Banner/rentals");
-  //     console.log(data);
-  //     setBanner(data.img);
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // }
-  // useEffect(() => {
-  //   get();
-  // }, []);
+  async function get() {
+    try {
+      const { data } = await axios.get("https://jsr-backend-x7rr.onrender.com/Banner/rentals");
+      console.log(data);
+      setBanner(data.img);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  useEffect(() => {
+    get();
+  }, []);
   return (
     <>
       <div className="fixed top-[320px] lg:top-[260px] right-0 h-72 w-10 items-center flex flex-col gap-10 justify-center bg-gray-600 opacity-75 z-50 rounded-tl-md rounded-bl-md    "  style={{zIndex:"9999"}}>

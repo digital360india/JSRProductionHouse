@@ -6,25 +6,25 @@ import "./Gallery2.css";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 
-// Initialize Swiper Core Components
 SwiperCore.use([Navigation, Pagination, EffectCoverflow, Autoplay]);
 
 const Gallery2 = () => {
-  const [gallery, setGallery] = useState([]); // Initialize with an empty array
-  const [isLoading, setIsLoading] = useState(true);  // Loading state
+  const [gallery, setGallery] = useState([]); 
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         const response = await fetch(
-          "https://jsr-backend-p4sz.onrender.com/Gallery"
+          "https://jsr-backend-x7rr.onrender.com/Gallery"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch.");
         }
         const data = await response.json();
-        setGallery(Object.values(data).slice(1, 14));
-        setIsLoading(false); // Set loading to false after data arrives
+        
+        setGallery(Object.values(data).slice(1));
+        setIsLoading(false); 
       } catch (error) {
         console.error("There was an error fetching the data", error);
       }
@@ -32,8 +32,8 @@ const Gallery2 = () => {
 
     fetchProducts();
   }, []);
-  let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
 
+  
   return (
     <div>
       <h1 className="text-center pt-20 -mt-5 lg:pt-28 text-4xl lg:text-6xl tracking-[2px]  lg:tracking-[6px] pb-2 lg:pb-4">
@@ -41,9 +41,9 @@ const Gallery2 = () => {
       </h1>
 
       { 
-      // isLoading ? (
-      //     <p>Loading...</p>
-      //   ) :
+      isLoading ? (
+          <p>Loading...</p>
+        ) :
          (
           <PhotoProvider>
             <Swiper
@@ -69,24 +69,15 @@ const Gallery2 = () => {
                 prevEl: ".swiper-button-prev",
               }}
             >
-              {/* {gallery &&
+              {gallery &&
                 gallery.map((url, index) => (
                   <SwiperSlide key={index} className="tranding-slide">
                     <PhotoView src={url}>
                       <img src={url} alt={`Slide ${index}`} />
                     </PhotoView>
                   </SwiperSlide>
-                ))} */}
-                {
-                  arr.map((i,index)=>(
-                    <SwiperSlide key={index} className="tranding-slide">
-                    <PhotoView src={`gallery${i}.jpg`}>
-                      <img src={`gallery${i}.jpg`} alt={`Slide ${index}`} />
-                    </PhotoView>
-                  </SwiperSlide>
-                  ))
-
-                }
+                ))}
+                
             </Swiper>
           </PhotoProvider>
         )
